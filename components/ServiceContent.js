@@ -6,36 +6,37 @@ class ServiceContent extends Component{
     render(){
 
     const serviceListArray = [
-        {
-            image:'service_1.jpg',
-            title:'Fresh Fruits',
-            description:'Organically grown crops tend use natural fertilizers like manure to improve growth to plant . Animals raised organically are', 
-            link:'/services',
-        },
-         {
-            image:'service_2.jpg',
-            title:'Fresh Vegetable',
-            description:'Organically grown crops tend use natural fertilizers like manure to improve growth to plant . Animals raised organically are', 
-            link:'/services',
-        },
-        {
-            image:'service_3.jpg',
-            title:'Natural Wheats',
-            description:'Organically grown crops tend use natural fertilizers like manure to improve growth to plant . Animals raised organically are', 
-            link:'/services',
-        },
-    ]
+      {
+        image: "windows-tab.jpeg",
+        title: "Windows",
+        description:
+          "Organically grown crops tend use natural fertilizers like manure to improve growth to plant . Animals raised organically are",
+        link: "/services",
+      },
+      {
+        image: "doors-tab.jpeg",
+        title: "Doors",
+        description:
+          "Our range of doors are available in a variety of styles, colours and finishes, ensuring a door that will perfectly complement your home whilst also completely increasing your security…",
+      },
+      {
+        image: "conservatories-tab.jpeg",
+        title: "Conservatories",
+        description:
+          "Our beautifully designed conservatories will completely enhance your property, both practically and visually, instantly adding value and providing extra living space…",
+      },
+    ];
  
 
     const serviceListtMap = serviceListArray.map((valu, i) => {
         return(
 
-            <div className="col-md-4 col-sm-12" key={i}> 
+            <div className="col-md-4 col-sm-12" key={i} > 
                 <div className="service-item">
                     <div className="img_serv"> 
                         <Link href={`${valu.link}`}><img src={`assets/images/${valu.image}`} alt="service" /></Link>
                     </div>
-                    <div className="service_text">
+                    <div className="service_text" style={{height: 250}}>
                         <Link href={`${valu.link}`}> 
                             <h4>{valu.title}</h4>
                         </Link>

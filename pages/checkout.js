@@ -6,7 +6,7 @@ const AboutPg = () => {
   return (
     <Fragment>
         
-      <LayoutOne pageTitle="FuodBorne -  React Next Template"> 
+      <LayoutOne pageTitle="Supreme-Windows-London"> 
 
         <Breadcrumb 
           bgImg={('/assets/images/header.jpg')}

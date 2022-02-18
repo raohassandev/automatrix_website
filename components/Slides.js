@@ -8,18 +8,27 @@ class Slides extends Component{
     render(){
 
         let slideImages = [
-            {
-                img:'slider1.jpg',
-                smallTitle: 'Professional Cleaning Services',
-                title:"A huge variety fruits & vegetables.",
-				description:"As quas equidem noluisse et, ex pro semper fierent oporteat. Te epic urei ullam corper usu, eos et voluptaria rationibus. Usu cu eligendi ad ipisci sed  altera dae reformidans ea, inermis ration ibus necessitatibus eu eum.",
-            },
-            {
-                img:'slider2.jpg',
-                smallTitle:"Professional Cleaning Services",
-                title:"A huge variety fruits & vegetables.",
-				description:"As quas equidem noluisse et, ex pro semper fierent oporteat. Te epic urei ullam corper usu, eos et voluptaria rationibus. Usu cu eligendi ad ipisci sed  altera dae reformidans ea, inermis ration ibus necessitatibus eu eum.",
-            },
+          {
+            img: "windows-tab.jpeg",
+            // smallTitle: "Professional Cleaning Services",
+            title: "Windows",
+            description:
+              "If you are looking for high quality windows that not only enhance the visual appeal of your home but also provide comprehensive protection, look no further than our extensive selection…",
+          },
+          {
+            img: "doors-tab.jpeg",
+            // smallTitle: "Professional Cleaning Services",
+            title: "Doors",
+            description:
+              "Our range of doors are available in a variety of styles, colours and finishes, ensuring a door that will perfectly complement your home whilst also completely increasing your security…",
+          },
+          {
+            img: "conservatories-tab.jpeg",
+            // smallTitle: "Professional Cleaning Services",
+            title: "Conservatories",
+            description:
+			"Our beautifully designed conservatories will completely enhance your property, both practically and visually, instantly adding value and providing extra living space…"
+		},
         ];
 
 		const properties = {

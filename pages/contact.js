@@ -9,7 +9,7 @@ class Contact extends Component{
 
         return(
         <Fragment>
-          <LayoutOne pageTitle="FuodBorne -  React Next Template"> 
+          <LayoutOne pageTitle="Supreme-Windows-London"> 
 
           <Breadcrumb 
             bgImg={('/assets/images/header.jpg')}

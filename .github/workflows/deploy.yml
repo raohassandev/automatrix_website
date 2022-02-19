@@ -24,11 +24,15 @@ jobs:
     - run: npm run export
       env:
         CI: true
+        
+    - name: List output files
+      run: find out/ -print
+      
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: sftp://${{ secrets.FTP_HOST }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: out
+        local-dir: out/
         git-ftp-args: --insecure 

@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="col-lg-3 col-sm-12">
                     <div className="widget">
                         <div className="footer_logo">
-                            <img className="img-responsive" src="assets/images/footer_logo.png" alt="" />
+                            <img className="img-responsive" src="assets/images/logo.jpeg" alt="" />
                         </div>
                         <div className="footer_p">
                             <p className="footer_para">Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of tempor inci didunt know youlab a et dolore magna aliqua </p>

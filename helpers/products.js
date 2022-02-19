@@ -189,4 +189,5 @@ export const CONTACT = {
   phone: "020 3124 1681",
   email: "info@windowsdirectlondon.co.uk",
   address: "Windows Direct London, 113 Stafford Road, Croydon, Surrey, CR0 4NN",
+  location:{latitude:"51.36369", longitude:"-0.11917"}
 };

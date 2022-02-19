@@ -40,8 +40,8 @@ const SingleService = () => {
       <div className="single_service_left" key={i}>
         <img src={`assets/images/${val.image}`} alt="" className="container-fluid" />
         <h4>{val.title}</h4>
+        <p className="h5">{val.desPartOne}</p>
         <p>{val.desPartTwo}</p>
-        <p>{val.desPartOne}</p>
       </div>
     );
   });

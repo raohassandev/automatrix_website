@@ -149,10 +149,22 @@ const Menu = () => {
                     </ul>
                   </li>
                   <li>
-                    <Link href="/contact">Triple Blazing</Link>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("glazing", "triple_glazing"),
+                      }}>
+                      Triple Glazing
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/contact">Schüco</Link>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("schuco", "schuco"),
+                      }}>
+                      Schüco
+                    </Link>
                   </li>
                   <li>
                     <Link href="/contact">Latest News</Link>

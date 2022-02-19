@@ -134,7 +134,7 @@ const conservatories = {
   //   },
 };
 const glazing = {
-  a: {
+  triple_glazing: {
     name: "Triple Glazing",
     image: "triple-glazing.jpeg",
     title: "Triple Glazed Windows & Doors in Croydon & Surrey",
@@ -146,8 +146,8 @@ const glazing = {
 };
 const schuco = {
   schuco: {
-    name: "Triple Glazing",
-    image: "triple-glazing.jpeg",
+    name: "Schüco",
+    image: "schuco.jpeg",
     title: "Triple Glazed Windows & Doors in Croydon & Surrey",
     miniDes: "",
     desPartOne:
@@ -173,4 +173,20 @@ export const PRODUCTS = {
     articles: conservatories,
     image: "conservatories.jpeg",
   },
+  glazing: {
+    title: "Triple Glazing",
+    articles: glazing,
+    image: "triple-glazing.jpeg",
+  },
+  schuco: {
+    schuco: "Triple Glazing",
+    articles: schuco,
+    image: "schuco.jpeg",
+  },
+};
+
+export const CONTACT = {
+  phone: "020 3124 1681",
+  email: "info@windowsdirectlondon.co.uk",
+  address: "Windows Direct London, 113 Stafford Road, Croydon, Surrey, CR0 4NN",
 };

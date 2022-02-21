@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import { getServiceList } from "../helpers/getProduct";
+import { getProduct, getServiceList } from "../helpers/getProduct";
 import { CONTACT } from "../helpers/products";
 
 const ServiceSidebar = () => {
@@ -31,10 +31,16 @@ const ServiceSidebar = () => {
   //   },
   // ];
   const serviceListArray = getServiceList();
-  const serviceListMap = serviceListArray.map((val, i) => {
+  const serviceListMap = serviceListArray.map((item, i) => {
     return (
       <li key={i}>
-        <Link href="/single-services">{val.serviceTitle}</Link>
+        <Link
+          href={{
+            pathname: "/single-services",
+            query: getProduct(item.type, item.key),
+          }}>
+          {item.serviceTitle}
+        </Link>
       </li>
     );
   });

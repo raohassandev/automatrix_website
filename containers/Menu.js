@@ -18,11 +18,11 @@ const Menu = () => {
       {/* Start: header navigation */}
       <div className="navigation">
         <div className="container">
-          {/* <div className="logo">
-              <Link href="/">
-                <img src="assets/images/logo.jpeg" alt="" style={{ marginTop: 15, marginLeft: -120 }} />
-              </Link>
-            </div> */}
+          {/* <div className="logo ">
+            <Link href="/">
+              <img src="assets/images/logo.jpeg" alt="" style={{ marginTop: 15, marginLeft: -120 }} />
+            </Link>
+          </div> */}
 
           <div className="meun_wrp">
             <Navbar expand="lg" sticky="top" id="navigation">
@@ -189,6 +189,9 @@ const Menu = () => {
                   <li>
                     <Link href="/contact">Contact</Link>
                   </li>
+                  <li>
+                    <Link href="/about">About Us</Link>
+                  </li>
                 </ul>
               </Nav>
             </Navbar>
@@ -203,7 +206,7 @@ const Menu = () => {
           {/* End:  Mobile Menu */}
 
           {/* Start: Cart  */}
-          <div className="header_cart">
+          {/* <div className="header_cart">
             <ul>
               <li className="header_search">
                 <a href="#" onClick={() => triggerSearch()} className="cart-toggler search_icon">
@@ -228,7 +231,7 @@ const Menu = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* End: Cart  */}
         </div>
         {/* container */}

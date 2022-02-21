@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import {CONTACT} from '../helpers/products'
 
 const Header = () => {
   return (
@@ -11,10 +12,12 @@ const Header = () => {
         <div className="header_top_right list-unstyled">
           <ul>
             <li>
-              <i className="fa fa-phone"></i>020 3124 1681
+              <i className="fa fa-phone"></i>
+              {CONTACT.phone}
             </li>
             <li>
-              <i className="fa fa-globe"></i>Complete address
+              <i className="fa fa-globe"></i>
+              {CONTACT.address}
             </li>
           </ul>
         </div>

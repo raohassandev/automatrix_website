@@ -60,7 +60,7 @@ const ServiceSidebar = () => {
             {/* <p>
               #27, East Madison Ave, <br /> Melbourne, Australia
             </p> */}
-            <p style={{width: "90%"}}>{CONTACT.address}</p>
+            <p style={{ width: "90%" }}>{CONTACT.address}</p>
           </div>
         </div>
       </div>

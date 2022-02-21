@@ -9,24 +9,16 @@ import Breadcrumb from "../components/Breadcrumb";
 const AboutPg = () => {
   return (
     <Fragment>
-        
-      <LayoutOne pageTitle="Supreme-Windows-London"> 
-
-        <Breadcrumb 
-          bgImg={('/assets/images/header.jpg')}
-          title="About Us" 
-        /> 
-           <div className="about-page"> 
-
-              <AboutContent />  
-              <Team /> 
-              <WorkProcess /> 
-              <Testimonial />
-  
-            </div>
- 
-     </LayoutOne>
-
+      <LayoutOne pageTitle="Supreme-Windows-London">
+        {/* <Breadcrumb bgImg={"/assets/images/about-us-sidebar.jpeg"} title="About Us" /> */}
+        <Breadcrumb bgImg={"/assets/images/about-us.jpeg"} title="About Us" />
+        <div className="about-page">
+          <AboutContent />
+          <Team />
+          <WorkProcess />
+          <Testimonial />
+        </div>
+      </LayoutOne>
     </Fragment>
   );
 };

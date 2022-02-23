@@ -20,7 +20,7 @@ const Menu = () => {
         <div className="container">
           {/* <div className="logo ">
             <Link href="/">
-              <img src="assets/images/logo.jpeg" alt="" style={{ marginTop: 15, marginLeft: -120 }} />
+              <img src="assets/images/logo.jpeg" alt="" style={{ marginTop: 15}} />
             </Link>
           </div> */}
 
@@ -169,7 +169,7 @@ const Menu = () => {
                   <li>
                     <Link href="/contact">Latest News</Link>
                   </li>
-                  <li className="has-sub">
+                  {/* <li className="has-sub">
                     <Link href="/shop">Shop</Link>
                     <ul>
                       <li>
@@ -185,7 +185,7 @@ const Menu = () => {
                         <Link href="/checkout">Checkout</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/contact">Contact</Link>
                   </li>

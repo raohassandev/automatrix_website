@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import {CONTACT} from '../helpers/products'
+import { CONTACT } from "../helpers/products";
 
 const Header = () => {
   return (
@@ -12,7 +12,9 @@ const Header = () => {
         <div className="header_top_right list-unstyled">
           <ul>
             <li>
-              <i className="fa fa-phone"></i>
+              <a href={`tel:${CONTACT.phone}`}>
+                <i className="fa fa-phone"></i>
+              </a>
               {CONTACT.phone}
             </li>
             <li>
@@ -24,7 +26,10 @@ const Header = () => {
         <div className="header_top_left">
           <ul className="header_socil list-inline pull-left">
             <li>
-              <i className="fa fa-envelope"></i>info@windowsdirectlondon.co.uk
+              <a href={`mailto:${CONTACT.email}`}>
+                <i className="fa fa-envelope"></i>
+              </a>
+              {CONTACT.email}
             </li>
             <li>
               <a href="//facebook.com" target="_blank" rel="noopener noreferrer">

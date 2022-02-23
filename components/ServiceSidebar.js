@@ -54,12 +54,16 @@ const ServiceSidebar = () => {
         <h4>Contact </h4>
         <div className="serv_contact_wrp">
           <div className="single-contact-info">
-            <i className="fa fa-phone"></i>
+            <a className="fa " href={`tel:${CONTACT.phone}`}>
+              <i className="fa fa-phone"></i>
+            </a>
             <p>{CONTACT.phone}</p>
           </div>
           <div className="single-contact-info">
-            <i className="fa fa-envelope"></i>
-            <p>{CONTACT.email}</p>
+            <a className="mr-2" href={`mailto:${CONTACT.email}`}>
+              <i className="fa fa-envelope"></i>
+            </a>
+            {CONTACT.email}
           </div>
           <div className="single-contact-info">
             <i className="fa fa-globe"></i>

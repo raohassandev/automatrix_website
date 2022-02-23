@@ -47,6 +47,7 @@ class Contact extends Component {
                               />
                               <span id="err">{this.state.name_err}</span>
                             </div>
+                            {/** FIXME: configure phone nubmer */}
                             <div className="col-lg-6 col-sm-12">
                               <input
                                 type="text"
@@ -54,18 +55,28 @@ class Contact extends Component {
                                 value={this.state.email}
                                 onChange={this.handleChangeEmail}
                                 id="exampleInputEmail1"
-                                placeholder="Email"
+                                placeholder="Phone"
                               />
                               <span id="err">{this.state.email_err}</span>
                             </div>
                             <div className="col-lg-12 col-sm-12">
+                                <input
+                                  type="text"
+                                  className="con-field form-control"
+                                  value={this.state.email}
+                                  onChange={this.handleChangeEmail}
+                                  id="exampleInputEmail1"
+                                  placeholder="Email"
+                                />
+                                <span id="err">{this.state.email_err}</span>
+                             
                               <input
                                 type="text"
                                 id="subject"
                                 value={this.state.subject}
                                 onChange={this.handleChangeSubject}
                                 className="form-control con-field"
-                                placeholder="Phone Number"
+                                placeholder="Subject"
                               />
                               <span id="err">{this.state.subject_err}</span>
                             </div>

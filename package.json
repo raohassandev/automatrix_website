@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "emailjs-com": "^3.2.0",
     "font-awesome": "^4.7.0",
     "gh-pages": "^3.1.0",
     "google-maps-react": "^2.0.6",
@@ -28,7 +29,8 @@
     "react-slick": "^0.28.1",
     "react-tabs": "^3.2.2",
     "react-visibility-sensor": "^5.1.1",
-    "swiper": "^6.7.0"
+    "swiper": "^6.7.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "prettier": "2.5.1"

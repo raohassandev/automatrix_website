@@ -3,6 +3,12 @@ import LayoutOne from "../layouts/LayoutOne";
 import Breadcrumb from "../components/Breadcrumb";
 import ContactMap from "../components/ContactMap";
 import { CONTACT } from "../helpers/products";
+import emailjs from "emailjs-com";
+import validator from "validator";
+
+const EMAIL_USER_ID = "user_QfNO2qhhjvW2AVguZK0mu";
+const TEMPLATE_ID = "template_n1v9nss";
+const SERVICE_ID = "service_lkdmglh";
 
 class Contact extends Component {
   render() {
@@ -45,31 +51,37 @@ class Contact extends Component {
                                 className="con-field form-control"
                                 placeholder="Name"
                               />
-                              <span id="err">{this.state.name_err}</span>
+                              <span id="err" className="text-danger">
+                                {this.state.name_err}
+                              </span>
                             </div>
                             {/** FIXME: configure phone nubmer */}
                             <div className="col-lg-6 col-sm-12">
                               <input
                                 type="text"
                                 className="con-field form-control"
+                                value={this.state.phone}
+                                onChange={this.handleChangePhone}
+                                id="phone"
+                                placeholder="Phone"
+                              />
+                              <span id="err" className="text-danger">
+                                {this.state.phone_err}
+                              </span>
+                            </div>
+                            <div className="col-lg-12 col-sm-12">
+                              <input
+                                type="text"
+                                className="con-field form-control"
                                 value={this.state.email}
                                 onChange={this.handleChangeEmail}
                                 id="exampleInputEmail1"
-                                placeholder="Phone"
+                                placeholder="Email"
                               />
-                              <span id="err">{this.state.email_err}</span>
-                            </div>
-                            <div className="col-lg-12 col-sm-12">
-                                <input
-                                  type="text"
-                                  className="con-field form-control"
-                                  value={this.state.email}
-                                  onChange={this.handleChangeEmail}
-                                  id="exampleInputEmail1"
-                                  placeholder="Email"
-                                />
-                                <span id="err">{this.state.email_err}</span>
-                             
+                              <span id="err" className="text-danger">
+                                {this.state.email_err}
+                              </span>
+
                               <input
                                 type="text"
                                 id="subject"
@@ -78,7 +90,9 @@ class Contact extends Component {
                                 className="form-control con-field"
                                 placeholder="Subject"
                               />
-                              <span id="err">{this.state.subject_err}</span>
+                              <span id="err" className="text-danger">
+                                {this.state.subject_err}
+                              </span>
                             </div>
                           </div>
                           <div className="row">
@@ -91,7 +105,9 @@ class Contact extends Component {
                                 rows="6"
                                 className="form-control con-field"
                                 placeholder="Your Message"></textarea>
-                              <span id="err">{this.state.message_err}</span>
+                              <span id="err" className="text-danger">
+                                {this.state.message_err}
+                              </span>
                               <div className="submit-area">
                                 <input
                                   type="button"
@@ -168,9 +184,11 @@ class Contact extends Component {
     this.state = {
       email: "",
       name: "",
+      phone: "",
       subject: "",
       message: "",
       email_err: "",
+      phone_err: "",
       name_err: "",
       subject_err: "",
       message_err: "",
@@ -178,6 +196,7 @@ class Contact extends Component {
       flag: false,
     };
     this.handleChangeEmail = this.handleChangeEmail.bind(this);
+    this.handleChangePhone = this.handleChangePhone.bind(this);
     this.handleChangeName = this.handleChangeName.bind(this);
     this.handleChangeSubject = this.handleChangeSubject.bind(this);
     this.handleChangeMessage = this.handleChangeMessage.bind(this);
@@ -197,6 +216,20 @@ class Contact extends Component {
     if (e.target.value === "") this.setState({ name_err: "Required Field" });
     else this.setState({ name_err: "" });
   }
+  handleChangePhone(e) {
+    console.log("validator -> ", validator.isMobilePhone(e.target.value));
+    this.setState({ phone: e.target.value });
+    // if (e.target.value === "") this.setState({ phone_err: "Required Field" });
+    // else this.setState({ phone_err: "" });
+    if (e.target.value === "") {
+      this.setState({ phone_err: "Required Field" });
+    } else if (validator.isMobilePhone(e.target.value)) {
+      this.setState({ phone_err: "" });
+    } else {
+      this.setState({ phone_err: "Not a valid phone number" });
+      // console.log('not a valid phone')
+    }
+  }
   handleChangeSubject(e) {
     this.setState({ subject: e.target.value });
     if (e.target.value === "") this.setState({ subject_err: "Required Field" });
@@ -211,12 +244,29 @@ class Contact extends Component {
   handleSubmit1() {
     if (this.state.name === "") this.setState({ name_err: "Required Field" });
     if (this.state.email === "") this.setState({ email_err: "Required Field" });
+    if (this.state.phone === "") this.setState({ phone_err: "Required Field" });
     if (this.state.subject === "") this.setState({ subject_err: "Required Field" });
     if (this.state.message === "") this.setState({ message_err: "Required Field" });
 
     if (this.state.name === "" || this.state.email === "" || this.state.subject === "" || this.state.message === "") {
       this.setState({ return_msg: "Fill All First", flag: true });
     } else {
+      const templateParams = {
+        name: this.state.name,
+        email: this.state.email,
+        phone: this.state.phone,
+        subject: this.state.subject,
+        message: this.state.message,
+      };
+
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, EMAIL_USER_ID).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
       this.setState({ return_msg: "Success.", flag: true });
     }
   }

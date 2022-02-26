@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { animateScroll } from "react-scroll";
 import Link from "next/link";
 import Creditors from "../components/Creditors";
+import { CONTACT } from "../helpers/products";
+import { getProduct } from "../helpers/getProduct";
 
 const Footer = () => {
   const [scroll, setScroll] = useState(0);
@@ -24,14 +26,14 @@ const Footer = () => {
   };
 
   return (
-    <div >
+    <div>
       <Creditors />
 
       <footer className="footer-section">
         <div className="container">
           <div className="row">
             {/*  Start:About  */}
-            <div className="col-lg-3 col-sm-12">
+            {/* <div className="col-lg-3 col-sm-12">
               <div className="widget">
                 <div className="footer_logo">
                   <img className="img-responsive" src="assets/images/logo.jpeg" alt="" />
@@ -72,29 +74,101 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
+            </div> */}
+            <div className="col-lg-3 col-sm-12">
+              <div className="widget quick_lnk">
+                <h5>Explore</h5>
+                <ul className="footer_recent_blog">
+                  <li>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("window", "main"),
+                      }}>
+                      Windows
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("door", "main"),
+                      }}>
+                      Doors
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("conservatory", "main"),
+                      }}>
+                      Conservatories
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("glazing", "triple_glazing"),
+                      }}>
+                      Triple Glazing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("schuco", "schuco"),
+                      }}>
+                      Schüco
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Latest News</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Contact</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">About Us</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
             {/*  End:About  */}
 
             {/*  Start:Quick Link  */}
             <div className="col-lg-3 col-sm-12">
               <div className="widget quick_lnk">
-                <h5>Quick Link</h5>
+                <h5>We Cover ...</h5>
                 <ul>
                   <li>
-                    <Link href="/about">Help and Ordering</Link>
+                    <Link href="/kingstonUponThames">Kingston-upon-Thames</Link>
                   </li>
                   <li>
-                    <Link href="/services">Return & Cancellation</Link>
+                    <Link href="/sutton">Sutton</Link>
                   </li>
                   <li>
-                    <Link href="/single-services">Online Organic Service</Link>
+                    <Link href="/purley">Purley</Link>
                   </li>
-                  <li>
-                    <Link href="/team">Delevery Schedule</Link>
-                  </li>
-                  <li>
-                    <Link href="/team">Online Organic Service</Link>
-                  </li>
+                </ul>
+              </div>
+              <div className="widget">
+                <ul>
+                  <li>Croydon</li>
+                </ul>
+                <ul>
+                  <li>Surrey</li>
+                </ul>
+                <ul>
+                  <li>London</li>
+                </ul>
+                <ul>
+                  <li>South London</li>
+                </ul>
+                <ul>
+                  <li>M25 Area</li>
                 </ul>
               </div>
             </div>
@@ -103,35 +177,14 @@ const Footer = () => {
             {/*  Start:Latest post   */}
             <div className="col-lg-3 col-sm-12">
               <div className="widget">
-                <h5>Latest Articles</h5>
-                <ul className="footer_recent_blog">
-                  <li>
-                    <img className="img-responsive" src="assets/images/blog1.jpg" alt="" />
-                    <span className="post_cont">
-                      <span className="post-date">
-                        <i className="fa fa-calendar"></i>March 14, 2019
-                      </span>
-                      <Link href="/single-blog">
-                        <a>
-                          <span>How to Eat Organic Foods</span>
-                        </a>
-                      </Link>
-                    </span>
-                  </li>
-                  <li>
-                    <img className="img-responsive" src="assets/images/blog2.jpg" alt="" />
-                    <span className="post_cont">
-                      <span className="post-date">
-                        <i className="fa fa-calendar"></i>March 14, 2019
-                      </span>
-                      <Link href="/single-blog">
-                        <a>
-                          <span>How to Eat Organic Foods</span>
-                        </a>
-                      </Link>
-                    </span>
-                  </li>
-                </ul>
+                <h5>Address</h5>
+                <div className="footer_recent_blog">
+                  <div>Direct Windows London</div>
+                  <div>113 Stafford Road</div>
+                  <div>Croydon</div>
+                  <div>Surrey</div>
+                  <div>CR0 4NN</div>
+                </div>
               </div>
             </div>
             {/*  End:Latest post  */}
@@ -171,9 +224,19 @@ const Footer = () => {
         </div>
         {/*  Start:Subfooter  */}
         <div className="subfooter">
-          <p>
-            2020 © Copyright <Link href="/">Fuodborne.</Link> All rights Reserved.
-          </p>
+          <div className="d-flex justify-content-center h4">
+            <div>Telephone 020 8667 0777 • </div>
+            <a href={`mailto:${CONTACT.email}`}>
+              {/* <i className="fa fa-envelope"></i> */}
+              <div style={{ marginLeft: 5, color: "whitesmoke" }}>Email info@windowsdirectlondon.co.uk</div>
+            </a>
+          </div>
+          <div className="d-flex justify-content-center">
+            <div className="h5">Windows Direct London </div>
+            <div style={{ marginLeft: 5 }}>{` is a registered company in England`}</div>
+          </div>
+
+          <p>© Windows Direct London 2022 All Rights Reserved.</p>
         </div>
         {/* End:Subfooter  */}
       </footer>

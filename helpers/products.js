@@ -1,4 +1,14 @@
 const windows = {
+  main: {
+    name: "Windows",
+    image: "windows.jpeg",
+    title: "Double Glazed Windows in Croydon & Surrey",
+    miniDes: "",
+    desPartOne:
+      "If you are looking for double glazed windows, look no further than Windows Direct! As a comprehensive supplier of an extensive range of windows, our selection includes a host of different styles, designs and finishes. This means that whatever your requirements, we will have the ideal windows for you and can ensure a finished result which beautifully complements, and enhances, the visual appeal of your property.",
+    desPartTwo:
+      "All of our products are tailored to your specifications, however unique they may be, and because we manufacture all of our products ourselves, you can even see your new windows being made! Whether you require a full set of new windows or simply a couple of replacement windows, our team work closely with you to establish your needs, tastes and budget and then provide a solution which accurately reflects these criteria.\nOur dedicated team of fully trained and highly skilled technicians perform installations of the highest quality and, as all of our products carry a 10 year insurance-backed guarantee as standard, you can rest assured of double glazed windows that will last for years to come.\nSo have a look at our different styles of windows today and give us a call at Windows Direct to discuss your requirements with a member of our highly experienced team or visit our showroom in Croydon.",
+  },
   upvc_window: {
     name: "uPVC Windows",
     image: "upvc-windows.jpeg",
@@ -42,6 +52,16 @@ const windows = {
 };
 
 const doors = {
+  main: {
+    name: "Doors",
+    image: "doors.jpeg",
+    title: "Doors in Croydon & Surrey",
+    miniDes: "Incredibly popular, stylish and modern, low-maintenance finish.uPVC Doors",
+    desPartOne:
+      "Your door is often one of the first things people notice about your home and, when chosen correctly, it can create a warm and welcoming invitation, setting the tone for the style of your property. Here at Windows Direct, we offer an extensive range of doors, offered in a wide variety of styles, designs and finishes, ensuring that we have the perfect door to complement your home and protect your property.",
+    desPartTwo:
+      "We offer an extensive selection of external doors, all manufactured using strong and durable materials to fully secure your home. Our front doors are tailored to your individual requirements, guaranteeing a finished result which accurately reflects your specifications, and our dedicated team install them to the most superior standard to ensure years of reliable service.\nWe also supply a range of back doors, including French doors, patio doors and bi-folding doors. Our specialist knowledge means that we can help you choose the perfect door for your application and we promise to work closely with you, from your initial enquiry through to the final installation.\nSo for more information on our range of high quality, beautifully designed doors, simply call the professionals at Windows Direct today or visit our showroom in Croydon.",
+  },
   upvc_door: {
     name: "uPVC Doors",
     image: "upvc-doors.jpeg",
@@ -85,6 +105,15 @@ const doors = {
 };
 
 const conservatories = {
+  main: {
+    name: "Conservatories",
+    image: "upvc-conservatories.jpeg",
+    title: "Conservatories in Croydon & Surrey",
+    miniDes: "Stylish and simple, low maintenance, add instant value.",
+    desPartOne:
+      "Here at Windows Direct our comprehensive service includes the manufacture, supply and installation of a wide range of conservatories. We specialise in conservatory design and all of our creations are tailored to your individual requirements and specifications, and are offered in an extensive selection of styles, colours and designs.",
+    desPartTwo: "A conservatory can dramatically enhance your home, adding instant value to your property and providing you with a valuable extra living space in which you can dine, relax, work or entertain. Whatever your application, we work closely with you throughout the entire process, from your initial ideas through the design phase and finally to completion.\nOur dedicated team are fully trained and highly experienced, ensuring that they are professionals when it comes to conservatory installation. When you call upon our assistance, you are guaranteed a beautifully designed, completely practical conservatory that will offer years of reliable service. We even offer a 10 year insurance-backed guarantee with all of our conservatories for your complete peace of mind!\nSimply give the friendly team at Windows Direct a call today for more information or visit our showroom in Croydon.",
+  },
   upvc_conservatory: {
     name: "uPVC Conservatories",
     image: "upvc-conservatories.jpeg",
@@ -125,13 +154,6 @@ const conservatories = {
     desPartTwo:
       "Combining a lean-to conservatory with an additional Edwardian or Victorian style bay, they create a large P-shape that’s big enough to extend across two separate rooms, offering a completely multi-functional space. And, because we manufacture your new P-shaped conservatory ourselves and customise it to your individual requirements and specifications, you can be sure of a finished result which accurately meets your needs.\nOur dedicated team are highly skilled and experienced, making them specialists at conducting superior standard installations. All of our conservatories are built to last and come complete with a 10 year guarantee, leaving you assured that your new conservatory will provide years of reliable use.\nSo for more information on our range of P-shaped conservatories, contact the professionals at Windows Direct today or visit our showroom in Croydon.",
   },
-  //   a: {
-  //     name: "",
-  //     image: ".jpeg",
-  //     title: " in Croydon & Surrey",
-  //     desPartOne: "",
-  //     desPartTwo: "",
-  //   },
 };
 const glazing = {
   triple_glazing: {
@@ -141,7 +163,8 @@ const glazing = {
     miniDes: "",
     desPartOne:
       "Triple glazed windows, doors and conservatories are the next step in making your home as energy efficient as possible. Triple gazing is already widely used in colder countries, like Sweden and Norway, because the additional layer of glass in triple glazed units traps more heat, and because the double cavities are filled with argon, they actually reflect radiated heat back into your home.",
-    desPartTwo: "But the better thermal efficiency isn’t the only benefit to triple glazed windows; they also block out more noise and provide enhanced security for your home, so you can be sure that the investment will help to reduce your energy bills, and lessen your carbon footprint, whilst making your home more comfortable and safe.\nOur range of triple glazing options are becoming ever more popular, thanks not only to their range of practical benefits but also their attractive selection of designs that will complement and enhance any home.\nWe have a dedicated and fully trained team to perform all of our installations to the very highest of standards, and you can rest assured that our windows come with a complete guarantee, so you can be sure that they will provide you with years of reliable performance.\nFor any more information about the extensive benefits of upgrading to triple glazed windows, simply contact the team at Windows Direct today or visit our showroom in Croydon.",
+    desPartTwo:
+      "But the better thermal efficiency isn’t the only benefit to triple glazed windows; they also block out more noise and provide enhanced security for your home, so you can be sure that the investment will help to reduce your energy bills, and lessen your carbon footprint, whilst making your home more comfortable and safe.\nOur range of triple glazing options are becoming ever more popular, thanks not only to their range of practical benefits but also their attractive selection of designs that will complement and enhance any home.\nWe have a dedicated and fully trained team to perform all of our installations to the very highest of standards, and you can rest assured that our windows come with a complete guarantee, so you can be sure that they will provide you with years of reliable performance.\nFor any more information about the extensive benefits of upgrading to triple glazed windows, simply contact the team at Windows Direct today or visit our showroom in Croydon.",
   },
 };
 const schuco = {
@@ -186,11 +209,11 @@ export const PRODUCTS = {
 };
 
 export const CONTACT = {
-  name:"Windows Direct London",
+  name: "Windows Direct London",
   // phone: "020 3124 1681",
   phone: "+923008414254",
   // email: "info@windowsdirectlondon.co.uk",
   email: "bilalshabbir725@gmail.com",
   address: "113 Stafford Road, Croydon, Surrey, CR0 4NN",
-  location:{latitude:"51.36369", longitude:"-0.11917"}
+  location: { latitude: "51.36369", longitude: "-0.11917" },
 };

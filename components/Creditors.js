@@ -12,10 +12,12 @@ const Creditors = () => {
     "aluplast.png",
   ];
 
+
+
   return (
     <div className="center-block m-5">
-      <div className="d-flex justify-content-center">
-        <img className="img-responsive" src="assets/images/logo.jpeg" alt="" />
+      <div className="d-flex justify-content-center col-md-12 col-sm-6">
+        <img className="img-responsive" src="assets/images/logo.jpeg" alt="" style={{ width: 250 }} />
         <h1 className="text-muted">are accredited by...</h1>
       </div>
       <div className="col-xs-1" align="center">

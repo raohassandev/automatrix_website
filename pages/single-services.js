@@ -7,8 +7,7 @@ import { getBottomArray } from "../helpers/getProduct";
 
 const SingleService = () => {
   const router = useRouter();
-  const { name, title,type, image, bgImg, desPartOne, desPartTwo} = router.query;
-
+  const { name, title, type, image, bgImg, desPartOne, desPartTwo } = router.query;
 
   const serviceTopArray = [
     {
@@ -19,21 +18,21 @@ const SingleService = () => {
     },
   ];
 
-//   const serviceBottomArray = [
-//     {
-//       image: "process_3.png",
-//       title: "Fresh Vegetable",
-//       des: "Experienced staff read nal Experienced sto help you full Prond Experienced eaelp you help anytime you",
-//     },
-//     {
-//       image: "process_4.png",
-//       title: "Fresh Fruits",
-//       des: "Experienced staff read nal Experienced sto help you full Prond Experienced eaelp you help anytime you",
-//     },
-//   ];
-    
-    const serviceBottomArray = getBottomArray(type, title)
-    // const serviceBottomArray = bottomArray;
+  //   const serviceBottomArray = [
+  //     {
+  //       image: "process_3.png",
+  //       title: "Fresh Vegetable",
+  //       des: "Experienced staff read nal Experienced sto help you full Prond Experienced eaelp you help anytime you",
+  //     },
+  //     {
+  //       image: "process_4.png",
+  //       title: "Fresh Fruits",
+  //       des: "Experienced staff read nal Experienced sto help you full Prond Experienced eaelp you help anytime you",
+  //     },
+  //   ];
+
+  const serviceBottomArray = getBottomArray(type, title);
+  // const serviceBottomArray = bottomArray;
 
   const serviceToptMap = serviceTopArray.map((val, i) => {
     return (

@@ -14,9 +14,9 @@ const AboutPg = () => {
         <Breadcrumb bgImg={"/assets/images/about-us.jpeg"} title="About Us" />
         <div className="about-page">
           <AboutContent />
-          <Team />
+          {/* <Team />
           <WorkProcess />
-          <Testimonial />
+          <Testimonial /> */}
         </div>
       </LayoutOne>
     </Fragment>

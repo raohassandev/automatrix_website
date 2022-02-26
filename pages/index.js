@@ -24,16 +24,16 @@ const Home = () => {
           <Slides />
           <AboutContent />
           <ServiceContent />
-          <Funfact />
-          <WorkProcess />
-          <ChooseUs /> 
-          <ProductsList />
-          <PricingList /> 
+          {/* <Funfact /> */}
+          {/* <WorkProcess /> */}
+          {/* <ChooseUs />  */}
+          {/* <ProductsList /> */}
+          {/* <PricingList />  */}
           <GalleryContent />
-          <Team /> 
-          <Testimonial />
-          <BlogList /> 
-          <ClinetCarousel />
+          {/* <Team />  */}
+          {/* <Testimonial /> */}
+          {/* <BlogList />  */}
+          {/* <ClinetCarousel /> */}
           <ContactForm />  
 
      </LayoutOne>

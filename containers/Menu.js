@@ -32,7 +32,13 @@ const Menu = () => {
                     <Link href="/">Home </Link>
                   </li>
                   <li className="has-sub">
-                    <Link href="#/">Windows</Link>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("window", "main"),
+                      }}>
+                      Windows
+                    </Link>
                     <ul>
                       <li>
                         <Link
@@ -67,7 +73,13 @@ const Menu = () => {
                     </ul>
                   </li>
                   <li className="has-sub">
-                    <Link href="/blog">Doors</Link>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("door", "main"),
+                      }}>
+                      Doors
+                    </Link>
                     <ul>
                       <li>
                         <Link
@@ -108,7 +120,13 @@ const Menu = () => {
                     </ul>
                   </li>
                   <li className="has-sub">
-                    <Link href="/blog">Conservatories</Link>
+                    <Link
+                      href={{
+                        pathname: "/single-services",
+                        query: getProduct("conservatory", "main"),
+                      }}>
+                      Conservatories
+                    </Link>
                     <ul>
                       <li>
                         <Link

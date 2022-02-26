@@ -55,7 +55,7 @@ class ServiceContent extends Component{
 
     return(
         <section className="service-section">
-            <div className="animate_icon">
+            {/* <div className="animate_icon">
                 <div className="animate_item animate_item1 bounce_animate">
                     <img src="assets/images/animate_icon1.png" alt="" />
                 </div>
@@ -68,7 +68,7 @@ class ServiceContent extends Component{
                 <div className="animate_item animate_item4 bounce_animate">
                     <img src="assets/images/animate_icon4.png" alt="" />
                 </div>
-            </div>
+            </div> */}
             <div className="container"> 
                 {/* Heading */}
                  <div className="base-header">

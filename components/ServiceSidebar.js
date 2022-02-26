@@ -74,7 +74,7 @@ const ServiceSidebar = () => {
           </div>
         </div>
       </div>
-      <div className="download_brochur">
+      {/* <div className="download_brochur">
         <h4>Downloads </h4>
         <p>Loren ipsum dolor cons ectetur adip iscing elit sed do eiu smod tempor </p>
         <ul className="files">
@@ -89,7 +89,7 @@ const ServiceSidebar = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

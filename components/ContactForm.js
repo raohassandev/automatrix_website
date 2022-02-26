@@ -62,10 +62,10 @@ class ContactForm extends Component {
   render() {
     return (
       <section className="contact-section">
-        <div
+        {/* <div
           className="contact_bg"
-          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "../../assets/images/contact_bg.jpg"})` }}></div>
-        <div className="contact_bg2"> </div>
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "../../assets/images/contact_bg.jpg"})` }}></div> */}
+        {/* <div className="contact_bg2"> </div> */}
         <div className="container">
           <div className="contact_wrp">
             <div className="row">

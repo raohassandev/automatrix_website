@@ -4,21 +4,15 @@ const Creditors = () => {
 
  const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
 
- {
-   /* Performs similarly to componentDidMount in classes */
- }
- useEffect(() => {
-   window.addEventListener(
-     "resize",
-     () => {
-       const ismobile = window.innerWidth < 1200;
-       if (ismobile !== isMobile) setIsMobile(ismobile);
-     },
-     false
-   );
- }, [isMobile]);
+{/* Performs similarly to componentDidMount in classes */}
+useEffect(() => {
+    window.addEventListener("resize", () => {
+        const ismobile = window.innerWidth < 1200;
+        if (ismobile !== isMobile) setIsMobile(ismobile);
+    }, false);
+}, [isMobile]);
 
-  const className = isMobile ? "col" : "d-flex justify-content-center";
+  // const className = isMobile ? "col" : "d-flex justify-content-center";
 
   const accreditBy = [
     "schuco.png",
@@ -31,10 +25,9 @@ const Creditors = () => {
     "aluplast.png",
   ];
   
-  console.log(className)
   return (
     <div className="center-block m-5">
-      <div className={className}>
+      <div className={`${isMobile ? "col" : "d-flex justify-content-center"}`}>
         <img className="img-responsive" src="assets/images/logo.jpeg" alt="" />
         <h1 className="text-muted">are accredited by...</h1>
       </div>

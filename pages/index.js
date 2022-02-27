@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <Fragment>
         
-      <LayoutOne pageTitle="FuodBorne - React Next Template">  
+      <LayoutOne pageTitle="Windows Direct">  
 
           <Slides />
           <AboutContent />

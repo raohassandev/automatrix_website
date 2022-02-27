@@ -2,17 +2,6 @@ import React, {useEffect, useState} from "react";
 
 const Creditors = () => {
 
- const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
-
-{/* Performs similarly to componentDidMount in classes */}
-useEffect(() => {
-    window.addEventListener("resize", () => {
-        const ismobile = window.innerWidth < 1200;
-        if (ismobile !== isMobile) setIsMobile(ismobile);
-    }, false);
-}, [isMobile]);
-
-  // const className = isMobile ? "col" : "d-flex justify-content-center";
 
   const accreditBy = [
     "schuco.png",
@@ -27,7 +16,8 @@ useEffect(() => {
   
   return (
     <div className="center-block m-5">
-      <div className={`${isMobile ? "col" : "d-flex justify-content-center"}`}>
+      {/* <div className={`${isMobile ? "col" : "d-flex justify-content-center"}`}> */}
+      <div className= "d-flex justify-content-center">
         <img className="img-responsive" src="assets/images/logo.jpeg" alt="" />
         <h1 className="text-muted">are accredited by...</h1>
       </div>

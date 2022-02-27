@@ -32,25 +32,25 @@ const Header = () => {
               {CONTACT.email}
             </li>
             <li>
-              <a href="//facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/WindowsDirectLondon" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="//twitter.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/windowsdirect1" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="//instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/windowsdirectlondon" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="//pinterest.com" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-pinterest"></i>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <Link href="/contact">

@@ -192,10 +192,34 @@ const Footer = () => {
             {/*  Start:Newsletter  */}
             <div className="col-lg-3 col-sm-12">
               <div className="widget">
-                <h5>Newsletter</h5>
+                <h5>Help & Advice</h5>
                 {/*  Start:Subscribe  */}
-                <div className="news_letter_wrp">
-                  <p>Subscribe our newsletter to get more update & join to fuodborne</p>
+                {/* <div className="news_letter_wrp"> */}
+                <div className="widget quick_lnk">
+                  <ul>
+                    <li>
+                      <Link href="/maintenance">Maintenance / Tips / FAQ's</Link>
+                    </li>
+                    <li>
+                      <Link href="/about">About Us</Link>
+                    </li>
+                    {/* <li>
+                      <Link href="/contact">Latest News</Link>
+                    </li> */}
+                    {/* <li>
+                      <Link href="/about">Links</Link>
+                    </li> */}
+                    <li>
+                      <Link href="/cookies">Cookies & Privacy Policy</Link>
+                    </li>
+                    {/* <li>
+                      <Link href="/about">Valid HTML5</Link>
+                    </li> */}
+                    <li>
+                      <Link href="http://www.adtrak.co.uk/">Web Design by Adtrak</Link>
+                    </li>
+                  </ul>
+                  {/* <p>Subscribe our newsletter to get more update & join to fuodborne</p>
                   <form className="mailchimp">
                     <input
                       className="email_field"
@@ -210,7 +234,7 @@ const Footer = () => {
                     <span className="subscription-success"> </span>
                     <span className="subscription-error"> </span>
                     <label className="subscription-label" htmlFor="subscriber-email"></label>
-                  </form>
+                  </form> */}
                   {/*  END MAILCHIMP FORM  */}
                 </div>
               </div>

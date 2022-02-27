@@ -184,9 +184,9 @@ const Menu = () => {
                       Schüco
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/contact">Latest News</Link>
-                  </li>
+                  </li> */}
                   {/* <li className="has-sub">
                     <Link href="/shop">Shop</Link>
                     <ul>

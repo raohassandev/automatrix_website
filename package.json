@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "build-static": "next build && next export && npm run build-static-repair-index",
+    "build-static-repair-index": "replace-in-files --string \"/_next/static\" --replacement \"./_next/static\" out/index.html"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
@@ -29,6 +31,7 @@
     "react-slick": "^0.28.1",
     "react-tabs": "^3.2.2",
     "react-visibility-sensor": "^5.1.1",
+    "replace-in-files-cli": "^2.0.0",
     "swiper": "^6.7.0",
     "validator": "^13.7.0"
   },

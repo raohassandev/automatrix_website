@@ -36,7 +36,9 @@ const Menu = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("window", "main"),
-                      }}>
+                      }}
+                    >
+                    {/* <Link href="/windows"> */}
                       Windows
                     </Link>
                     <ul>

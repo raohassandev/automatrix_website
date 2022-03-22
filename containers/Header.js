@@ -13,7 +13,7 @@ const Header = () => {
           <ul>
             <li>
               <a href={`tel:${CONTACT.phone}`}>
-                <i className="fa fa-phone"></i>
+                <i className="fa fa-phone"> </i>
               </a>
               {CONTACT.phone}
             </li>
@@ -32,17 +32,29 @@ const Header = () => {
               {CONTACT.email}
             </li>
             <li>
-              <a href="https://www.facebook.com/WindowsDirectLondon" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.facebook.com/WindowsDirectLondon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/windowsdirect1" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/windowsdirect1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/windowsdirectlondon" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/windowsdirectlondon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-instagram"></i>
               </a>
             </li>

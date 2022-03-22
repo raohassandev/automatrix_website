@@ -1,0 +1,10 @@
+{
+  "type": "sftp",
+  "host": "access858581656.webspace-data.io",
+  "username": "u103584624-root",
+  "password": "Lahore786.Bilal",
+  "port": 22,
+  "remotePath": "/",
+  "uploadOnSave": true,
+  "uploadConfigFile": false
+}

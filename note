@@ -1,0 +1,3 @@
+change the assetPrefix
+find:   "/_next/static/
+replace: "./_next/static/

@@ -32,49 +32,6 @@ const Footer = () => {
       <footer className="footer-section">
         <div className="container">
           <div className="row">
-            {/*  Start:About  */}
-            {/* <div className="col-lg-3 col-sm-12">
-              <div className="widget">
-                <div className="footer_logo">
-                  <img className="img-responsive" src="assets/images/logo.jpeg" alt="" />
-                </div>
-                <div className="footer_p">
-                  <p className="footer_para">
-                    Loren ipsum dolor conse ctetur at adipis cing elit sed do eiu smod of tempor inci didunt know youlab
-                    a et dolore magna aliqua{" "}
-                  </p>
-                </div>
-                <div className="footer_socil">
-                  <ul className="list-icons link-list footer_soc">
-                    <li>
-                      <a href="//facebook.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="//twitter.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="//facebook.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-behance"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="//instagram.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="//pinterest.com" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-pinterest"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div> */}
             <div className="col-lg-3 col-sm-12">
               <div className="widget quick_lnk">
                 <h5>Explore</h5>
@@ -84,7 +41,8 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("window", "main"),
-                      }}>
+                      }}
+                    >
                       Windows
                     </Link>
                   </li>
@@ -93,7 +51,8 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("door", "main"),
-                      }}>
+                      }}
+                    >
                       Doors
                     </Link>
                   </li>
@@ -102,7 +61,8 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("conservatory", "main"),
-                      }}>
+                      }}
+                    >
                       Conservatories
                     </Link>
                   </li>
@@ -111,7 +71,8 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("glazing", "triple_glazing"),
-                      }}>
+                      }}
+                    >
                       Triple Glazing
                     </Link>
                   </li>
@@ -120,7 +81,8 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("schuco", "schuco"),
-                      }}>
+                      }}
+                    >
                       Schüco
                     </Link>
                   </li>
@@ -198,17 +160,13 @@ const Footer = () => {
                 <div className="widget quick_lnk">
                   <ul>
                     <li>
-                      <Link href="/maintenance">Maintenance / Tips / FAQ's</Link>
+                      <Link href="/maintenance">
+                        Maintenance / Tips / FAQ's
+                      </Link>
                     </li>
                     <li>
                       <Link href="/about">About Us</Link>
                     </li>
-                    {/* <li>
-                      <Link href="/contact">Latest News</Link>
-                    </li> */}
-                    {/* <li>
-                      <Link href="/about">Links</Link>
-                    </li> */}
                     <li>
                       <Link href="/cookies">Cookies & Privacy Policy</Link>
                     </li>
@@ -216,48 +174,50 @@ const Footer = () => {
                       <Link href="/about">Valid HTML5</Link>
                     </li> */}
                     <li>
-                      <Link href="http://www.adtrak.co.uk/">Web Design by Adtrak</Link>
+                      <Link href="http://www.adtrak.co.uk/">
+                        Web Design by Adtrak
+                      </Link>
                     </li>
                   </ul>
-                  {/* <p>Subscribe our newsletter to get more update & join to fuodborne</p>
-                  <form className="mailchimp">
-                    <input
-                      className="email_field"
-                      type="text"
-                      name="email"
-                      id="subscriber-email"
-                      placeholder="Email Address"
-                    />
-                    <button className="submit-contact" type="submit" id="subscribe-button">
-                      Subscribe
-                    </button>
-                    <span className="subscription-success"> </span>
-                    <span className="subscription-error"> </span>
-                    <label className="subscription-label" htmlFor="subscriber-email"></label>
-                  </form> */}
-                  {/*  END MAILCHIMP FORM  */}
                 </div>
               </div>
             </div>
-            {/*  End:Start Subscribe  */}
 
-            <button className={`scrollup ${scroll > top ? "show" : ""}`} onClick={() => scrollToTop()}>
+            <button
+              className={`scrollup ${scroll > top ? "show" : ""}`}
+              onClick={() => scrollToTop()}
+            >
               <span className="icon-glyph-203"></span>
             </button>
           </div>
         </div>
         {/*  Start:Subfooter  */}
         <div className="subfooter">
-          <div className="d-flex justify-content-center h4">
-            <div>Telephone 020 8667 0777 • </div>
+          <div className=" justify-content-center h4 row">
+            <a href={`tel:${CONTACT.phone}`}>
+              <div
+                className="col-sm-12"
+                style={{ marginLeft: 5, color: "whitesmoke" }}
+              >
+                <i className="fa fa-phone">{CONTACT.phone}</i>
+              </div>
+            </a>
+          </div>
+          <div className=" justify-content-center h4 row">
             <a href={`mailto:${CONTACT.email}`}>
-              {/* <i className="fa fa-envelope"></i> */}
-              <div style={{ marginLeft: 5, color: "whitesmoke" }}>Email info@windowsdirectlondon.co.uk</div>
+              <div
+                className="col-sm-12"
+                style={{ marginLeft: 5, color: "whitesmoke" }}
+              >
+                <i className="fa fa-envelope">{CONTACT.email}</i>
+              </div>
             </a>
           </div>
           <div className="d-flex justify-content-center">
             <div className="h5">Windows Direct London </div>
-            <div style={{ marginLeft: 5 }}>{` is a registered company in England`}</div>
+            <div
+              style={{ marginLeft: 5 }}
+            >{` is a registered company in England`}</div>
           </div>
 
           <p>© Windows Direct London 2022 All Rights Reserved.</p>

@@ -22,8 +22,8 @@ const Creditors = () => {
         <h1 className="text-muted">are accredited by...</h1>
       </div>
       <div className="col-xs-1" align="center">
-        {accreditBy.map((c) => (
-          <img src={`assets/images/${c}`} alt="image" style={{ width: 150 }} className="col" />
+        {accreditBy.map((c, index) => (
+          <img src={`assets/images/${c}`} alt="image" style={{ width: 150 }} className="col" key={index} />
         ))}
       </div>
     </div>

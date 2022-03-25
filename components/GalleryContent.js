@@ -125,11 +125,11 @@ class GalleryContent extends Component {
             <div className="project_slider_one">
               <Slider {...settings}>{ImageGalleryDataList}</Slider>
             </div>
-            <div className="project_btn text-center">
+            {/* <div className="project_btn text-center">
               <Link href="/gallery">
                 <a className="more-link"> View More </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

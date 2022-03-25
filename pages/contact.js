@@ -114,6 +114,7 @@ class Contact extends Component {
                                   id="submit"
                                   name="send"
                                   onClick={this.handleSubmit1}
+                                  // onClick={()=> console.log('text')}
                                   className="submit-contact submitBnt"
                                   value="Send Message"
                                 />
@@ -205,10 +206,8 @@ class Contact extends Component {
 
   handleChangeEmail(e) {
     this.setState({ email: e.target.value });
-    var EmailReg = /(\w+)\s(\w+)/;
     if (e.target.value === "") this.setState({ email_err: "Required Field" });
-    else if (EmailReg.test(e.target.value)) this.setState({ email_err: "" });
-    else this.setState({ email_err: "Enter Valid Email" });
+    else this.setState({ email_err: "" });
   }
 
   handleChangeName(e) {
@@ -234,6 +233,8 @@ class Contact extends Component {
     this.setState({ subject: e.target.value });
     if (e.target.value === "") this.setState({ subject_err: "Required Field" });
     else this.setState({ subject_err: "" });
+
+    console.log(e.target.value);
   }
   handleChangeMessage(e) {
     this.setState({ message: e.target.value });
@@ -242,14 +243,34 @@ class Contact extends Component {
   }
 
   handleSubmit1() {
-    if (this.state.name === "") this.setState({ name_err: "Required Field" });
-    if (this.state.email === "") this.setState({ email_err: "Required Field" });
-    if (this.state.phone === "") this.setState({ phone_err: "Required Field" });
-    if (this.state.subject === "") this.setState({ subject_err: "Required Field" });
-    if (this.state.message === "") this.setState({ message_err: "Required Field" });
+    if (this.state.name === "") {
+      this.setState({ name_err: "Required Field" });
+      return;
+    }
+    if (this.state.email === "") {
+      this.setState({ email_err: "Required Field" });
+      return;
+    }
+    if (this.state.phone === "") {
+      this.setState({ phone_err: "Required Field" });
+      return;
+    }
+    if (this.state.subject === "") {
+      this.setState({ subject_err: "Required Field" });
+      return;
+    }
+    if (this.state.message === "") {
+      this.setState({ message_err: "Required Field" });
+      return;
+    }
 
+    var EmailReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (!EmailReg.test(this.state.email)) {
+      this.setState({ email_err: "Enter Valid Email" });
+      return;
+    }
     if (this.state.name === "" || this.state.email === "" || this.state.subject === "" || this.state.message === "") {
-      this.setState({ return_msg: "Fill All First", flag: true });
+      this.setState({ return_msg: "Fill All First", flag: false });
     } else {
       const templateParams = {
         name: this.state.name,
@@ -259,15 +280,30 @@ class Contact extends Component {
         message: this.state.message,
       };
 
-      emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, EMAIL_USER_ID).then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (err) => {
-          console.log("FAILED...", err);
-        }
-      );
-      this.setState({ return_msg: "Success.", flag: true });
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, templateParams, EMAIL_USER_ID)
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (err) => {
+            console.log("FAILED...", err);
+          }
+        )
+        .catch((err) => {
+          console.log(err);
+        })
+        .finally(() => {
+          this.setState({
+            email: "",
+            name: "",
+            phone: "",
+            subject: "",
+            message: "",
+            return_msg: "Success.",
+            flag: true,
+          });
+        });
     }
   }
 }

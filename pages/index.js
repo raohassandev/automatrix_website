@@ -14,30 +14,27 @@ import Testimonial from '../components/Testimonial';
 import BlogList from '../components/BlogList'; 
 import ClinetCarousel from '../components/ClinetCarousel';
 import ContactForm from '../components/ContactForm';
+import Contact from "./contact";
 
 const Home = () => {
   return (
     <Fragment>
-        
-      <LayoutOne pageTitle="Windows Direct">  
-
-          <Slides />
-          <AboutContent />
-          <ServiceContent />
-          {/* <Funfact /> */}
-          {/* <WorkProcess /> */}
-          {/* <ChooseUs />  */}
-          {/* <ProductsList /> */}
-          {/* <PricingList />  */}
-          <GalleryContent />
-          {/* <Team />  */}
-          {/* <Testimonial /> */}
-          {/* <BlogList />  */}
-          {/* <ClinetCarousel /> */}
-          <ContactForm />  
-
-     </LayoutOne>
-
+      <LayoutOne pageTitle="Windows Direct">
+        <Slides />
+        <AboutContent />
+        <ServiceContent />
+        {/* <Funfact /> */}
+        {/* <WorkProcess /> */}
+        {/* <ChooseUs />  */}
+        {/* <ProductsList /> */}
+        {/* <PricingList />  */}
+        <GalleryContent />
+        {/* <Team />  */}
+        {/* <Testimonial /> */}
+        {/* <BlogList />  */}
+        {/* <ClinetCarousel /> */}
+        <ContactForm />
+      </LayoutOne>
     </Fragment>
   );
 };

@@ -41,8 +41,7 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("window", "main"),
-                      }}
-                    >
+                      }}>
                       Windows
                     </Link>
                   </li>
@@ -51,8 +50,7 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("door", "main"),
-                      }}
-                    >
+                      }}>
                       Doors
                     </Link>
                   </li>
@@ -61,8 +59,7 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("conservatory", "main"),
-                      }}
-                    >
+                      }}>
                       Conservatories
                     </Link>
                   </li>
@@ -71,8 +68,7 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("glazing", "triple_glazing"),
-                      }}
-                    >
+                      }}>
                       Triple Glazing
                     </Link>
                   </li>
@@ -81,8 +77,7 @@ const Footer = () => {
                       href={{
                         pathname: "/single-services",
                         query: getProduct("schuco", "schuco"),
-                      }}
-                    >
+                      }}>
                       Schüco
                     </Link>
                   </li>
@@ -160,9 +155,7 @@ const Footer = () => {
                 <div className="widget quick_lnk">
                   <ul>
                     <li>
-                      <Link href="/maintenance">
-                        Maintenance / Tips / FAQ's
-                      </Link>
+                      <Link href="/maintenance">Maintenance / Tips / FAQ's</Link>
                     </li>
                     <li>
                       <Link href="/about">About Us</Link>
@@ -174,50 +167,39 @@ const Footer = () => {
                       <Link href="/about">Valid HTML5</Link>
                     </li> */}
                     <li>
-                      <Link href="http://www.adtrak.co.uk/">
-                        Web Design by Adtrak
-                      </Link>
+                      <Link href="http://www.adtrak.co.uk/">Web Design by Adtrak</Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <button
-              className={`scrollup ${scroll > top ? "show" : ""}`}
-              onClick={() => scrollToTop()}
-            >
+            <button className={`scrollup ${scroll > top ? "show" : ""}`} onClick={() => scrollToTop()}>
               <span className="icon-glyph-203"></span>
             </button>
           </div>
         </div>
         {/*  Start:Subfooter  */}
         <div className="subfooter">
-          <div className=" justify-content-center h4 row">
+          <div className=" justify-content-center h5 row">
             <a href={`tel:${CONTACT.phone}`}>
-              <div
-                className="col-sm-12"
-                style={{ marginLeft: 5, color: "whitesmoke" }}
-              >
-                <i className="fa fa-phone">{CONTACT.phone}</i>
+              <div className="col-sm-12 mr-2" style={{ color: "whitesmoke" }}>
+                <i className="fa fa-phone"></i> <i>{CONTACT.phone}</i>
               </div>
             </a>
           </div>
           <div className=" justify-content-center h4 row">
             <a href={`mailto:${CONTACT.email}`}>
-              <div
-                className="col-sm-12"
-                style={{ marginLeft: 5, color: "whitesmoke" }}
-              >
-                <i className="fa fa-envelope">{CONTACT.email}</i>
+              <div className="col-sm-12 h5" style={{ color: "whitesmoke" }}>
+              
+                <i className="fa fa-envelope mr-2" />
+                <i>{CONTACT.email}</i>
               </div>
             </a>
           </div>
           <div className="d-flex justify-content-center">
             <div className="h5">Windows Direct London </div>
-            <div
-              style={{ marginLeft: 5 }}
-            >{` is a registered company in England`}</div>
+            <div style={{ marginLeft: 5 }}>{` is a registered company in England`}</div>
           </div>
 
           <p>© Windows Direct London 2022 All Rights Reserved.</p>

@@ -13,8 +13,9 @@ import Team from '../components/Team';
 import Testimonial from '../components/Testimonial';  
 import BlogList from '../components/BlogList'; 
 import ClinetCarousel from '../components/ClinetCarousel';
-import ContactForm from '../components/ContactForm';
+// import ContactForm from '../components/ContactForm';
 import Contact from "./contact";
+import ContactForm2 from "../components/ContactForm";
 
 const Home = () => {
   return (
@@ -33,7 +34,8 @@ const Home = () => {
         {/* <Testimonial /> */}
         {/* <BlogList />  */}
         {/* <ClinetCarousel /> */}
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <ContactForm2 />
       </LayoutOne>
     </Fragment>
   );

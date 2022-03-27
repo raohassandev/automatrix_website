@@ -3378,6 +3378,7 @@ header {
 .single_con_add p:nth-child(2) {
   margin-top: -10px;
   font-weight: bold;
+  margin-right: 20;
 }
 
 .contact-page .contact-section .single_con_add {

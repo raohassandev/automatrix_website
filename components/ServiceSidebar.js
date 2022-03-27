@@ -56,14 +56,16 @@ const ServiceSidebar = () => {
           <div className="single-contact-info">
             <a className="fa " href={`tel:${CONTACT.phone}`}>
               <i className="fa fa-phone"></i>
+
+              <p>{CONTACT.phone}</p>
             </a>
-            <p>{CONTACT.phone}</p>
           </div>
           <div className="single-contact-info">
             <a className="mr-2" href={`mailto:${CONTACT.email}`}>
               <i className="fa fa-envelope"></i>
+
+              {CONTACT.email}
             </a>
-            {CONTACT.email}
           </div>
           <div className="single-contact-info">
             <i className="fa fa-globe"></i>

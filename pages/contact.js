@@ -5,6 +5,7 @@ import ContactMap from "../components/ContactMap";
 import { CONTACT } from "../helpers/products";
 import emailjs from "emailjs-com";
 import validator from "validator";
+import { ContactDetailsBox } from "../components/ContactDetailsBox";
 
 const EMAIL_USER_ID = "user_QfNO2qhhjvW2AVguZK0mu";
 const TEMPLATE_ID = "template_n1v9nss";
@@ -127,47 +128,8 @@ class Contact extends Component {
                     </div>
 
                     {/*===  Contact Details  ===*/}
-                    <div className="col-md-4 col-sm-12">
-                      <div className="contact_pg_address">
-                        <h3>
-                          Hello there <br />
-                          got a project?
-                        </h3>
-                        <div className="single_con_add">
-                          <a href="#/">
-                            <i className="icon-glyph-226"></i>
-                          </a>
-                          <p>
-                            <span>Company Address :</span>
-                          </p>
-                          <p>
-                            <span>{CONTACT.address}</span>
-                          </p>
-                        </div>
-                        <div className="single_con_add">
-                          <a href="#/">
-                            <i className="icon-glyph-334"></i>
-                          </a>
-                          <p>
-                            <span>Email Address :</span>
-                          </p>
-                          <p>
-                            <span>{CONTACT.email}</span>
-                          </p>
-                        </div>
-                        <div className="single_con_add">
-                          <a href="#/">
-                            <i className="icon-glyph-33"></i>
-                          </a>
-                          <p>
-                            <span>Contact Us :</span>
-                          </p>
-                          <p>
-                            <span>{CONTACT.phone}</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    {ContactDetailsBox}
+                   
                     {/*===  end: Contact Details  ===*/}
                   </div>
                 </div>

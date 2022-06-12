@@ -14,55 +14,54 @@ const Menu = () => {
   };
 
   return (
-    <div className="menu_area">
+    <div className='menu_area'>
       {/* Start: header navigation */}
-      <div className="navigation">
-        <div className="container">
+      <div className='navigation'>
+        <div className='container'>
           {/* <div className="logo ">
             <Link href="/">
               <img src="assets/images/logo.jpeg" alt="" style={{ marginTop: 15}} />
             </Link>
           </div> */}
 
-          <div className="meun_wrp">
-            <Navbar expand="lg" sticky="top" id="navigation">
-              <Nav className="mr-auto">
+          <div className='meun_wrp'>
+            <Navbar expand='lg' sticky='top' id='navigation'>
+              <Nav className='mr-auto'>
                 <ul>
-                  <li className="active">
-                    <Link href="/">Home </Link>
+                  <li className='active'>
+                    <Link href='/'>Home </Link>
                   </li>
-                  <li className="has-sub">
+                  <li className='has-sub'>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("window", "main"),
-                      }}
-                    >
-                    {/* <Link href="/windows"> */}
+                        pathname: '/single-services',
+                        query: getProduct('window', 'main'),
+                      }}>
+                      {/* <Link href="/windows"> */}
                       Windows
                     </Link>
                     <ul>
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("window", "upvc_window"),
+                            pathname: '/single-services',
+                            query: getProduct('window', 'upvc_window'),
                           }}>
                           uPVC Windows
                         </Link>
                       </li>
                       <li>
-                        <Link href={{ pathname: "/single-services", query: getProduct("window", "casement_window") }}>
+                        <Link href={{ pathname: '/single-services', query: getProduct('window', 'casement_window') }}>
                           Casement Windows
                         </Link>
                       </li>
                       <li>
-                        <Link href={{ pathname: "/single-services", query: getProduct("window", "aluminium_window") }}>
+                        <Link href={{ pathname: '/single-services', query: getProduct('window', 'aluminium_window') }}>
                           Aluminium Windows
                         </Link>
                       </li>
                       <li>
-                        <Link href={{ pathname: "/single-services", query: getProduct("window", "sash_window") }}>
+                        <Link href={{ pathname: '/single-services', query: getProduct('window', 'sash_window') }}>
                           Sash Windows
                         </Link>
                       </li>
@@ -74,11 +73,11 @@ const Menu = () => {
                         </li> */}
                     </ul>
                   </li>
-                  <li className="has-sub">
+                  <li className='has-sub'>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("door", "main"),
+                        pathname: '/single-services',
+                        query: getProduct('door', 'main'),
                       }}>
                       Doors
                     </Link>
@@ -86,8 +85,8 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("door", "upvc_door"),
+                            pathname: '/single-services',
+                            query: getProduct('door', 'upvc_door'),
                           }}>
                           uPVC Doors
                         </Link>
@@ -95,8 +94,8 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("door", "composite_door"),
+                            pathname: '/single-services',
+                            query: getProduct('door', 'sliding_door'),
                           }}>
                           Composite Doors
                         </Link>
@@ -104,28 +103,28 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("door", "patio_door"),
+                            pathname: '/single-services',
+                            query: getProduct('door', 'single_door'),
                           }}>
-                          Patio Doors
+                          Single Doors
                         </Link>
                       </li>
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("door", "bi_folding_door"),
+                            pathname: '/single-services',
+                            query: getProduct('door', 'bi_folding_door'),
                           }}>
                           Bi-Folding Doors
                         </Link>
                       </li>
                     </ul>
                   </li>
-                  <li className="has-sub">
+                  <li className='has-sub'>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("conservatory", "main"),
+                        pathname: '/single-services',
+                        query: getProduct('conservatory', 'main'),
                       }}>
                       Conservatories
                     </Link>
@@ -133,8 +132,8 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("conservatory", "upvc_conservatory"),
+                            pathname: '/single-services',
+                            query: getProduct('conservatory', 'upvc_conservatory'),
                           }}>
                           uPVC Conservatories
                         </Link>
@@ -142,8 +141,8 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("conservatory", "edwardian_conservatory"),
+                            pathname: '/single-services',
+                            query: getProduct('conservatory', 'edwardian_conservatory'),
                           }}>
                           Edwardian Conservatories
                         </Link>
@@ -151,8 +150,8 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("conservatory", "victorian_conservatory"),
+                            pathname: '/single-services',
+                            query: getProduct('conservatory', 'victorian_conservatory'),
                           }}>
                           Victorian Conservatories
                         </Link>
@@ -160,8 +159,8 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: "/single-services",
-                            query: getProduct("conservatory", "p_shaped_conservatory"),
+                            pathname: '/single-services',
+                            query: getProduct('conservatory', 'p_shaped_conservatory'),
                           }}>
                           P-Shape Conservatories
                         </Link>
@@ -171,8 +170,8 @@ const Menu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("glazing", "triple_glazing"),
+                        pathname: '/single-services',
+                        query: getProduct('glazing', 'triple_glazing'),
                       }}>
                       Triple Glazing
                     </Link>
@@ -180,8 +179,8 @@ const Menu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("schuco", "schuco"),
+                        pathname: '/single-services',
+                        query: getProduct('schuco', 'schuco'),
                       }}>
                       Schüco
                     </Link>
@@ -207,10 +206,10 @@ const Menu = () => {
                     </ul>
                   </li> */}
                   <li>
-                    <Link href="/contact">Contact</Link>
+                    <Link href='/contact'>Contact</Link>
                   </li>
                   <li>
-                    <Link href="/about">About Us</Link>
+                    <Link href='/about'>About Us</Link>
                   </li>
                 </ul>
               </Nav>

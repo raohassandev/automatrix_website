@@ -27,20 +27,20 @@ const Footer = () => {
 
   return (
     <div>
-      <Creditors />
+      {/* <Creditors /> */}
 
-      <footer className="footer-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-sm-12">
-              <div className="widget quick_lnk">
+      <footer className='footer-section'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-3 col-sm-12'>
+              <div className='widget quick_lnk'>
                 <h5>Explore</h5>
-                <ul className="footer_recent_blog">
+                <ul className='footer_recent_blog'>
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("window", "main"),
+                        pathname: '/single-services',
+                        query: getProduct('window', 'main'),
                       }}>
                       Windows
                     </Link>
@@ -48,8 +48,8 @@ const Footer = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("door", "main"),
+                        pathname: '/single-services',
+                        query: getProduct('door', 'main'),
                       }}>
                       Doors
                     </Link>
@@ -57,8 +57,8 @@ const Footer = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("conservatory", "main"),
+                        pathname: '/single-services',
+                        query: getProduct('conservatory', 'main'),
                       }}>
                       Conservatories
                     </Link>
@@ -66,8 +66,8 @@ const Footer = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("glazing", "triple_glazing"),
+                        pathname: '/single-services',
+                        query: getProduct('glazing', 'triple_glazing'),
                       }}>
                       Triple Glazing
                     </Link>
@@ -75,20 +75,20 @@ const Footer = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("schuco", "schuco"),
+                        pathname: '/single-services',
+                        query: getProduct('schuco', 'schuco'),
                       }}>
                       Schüco
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact">Latest News</Link>
+                    <Link href='/contact'>Latest News</Link>
                   </li>
                   <li>
-                    <Link href="/contact">Contact</Link>
+                    <Link href='/contact'>Contact</Link>
                   </li>
                   <li>
-                    <Link href="/about">About Us</Link>
+                    <Link href='/about'>About Us</Link>
                   </li>
                 </ul>
               </div>
@@ -96,22 +96,22 @@ const Footer = () => {
             {/*  End:About  */}
 
             {/*  Start:Quick Link  */}
-            <div className="col-lg-3 col-sm-12">
-              <div className="widget quick_lnk">
+            <div className='col-lg-3 col-sm-12'>
+              <div className='widget quick_lnk'>
                 <h5>We Cover ...</h5>
                 <ul>
                   <li>
-                    <Link href="/kingstonUponThames">Kingston-upon-Thames</Link>
+                    <Link href='/kingstonUponThames'>Kingston-upon-Thames</Link>
                   </li>
                   <li>
-                    <Link href="/sutton">Sutton</Link>
+                    <Link href='/sutton'>Sutton</Link>
                   </li>
                   <li>
-                    <Link href="/purley">Purley</Link>
+                    <Link href='/purley'>Purley</Link>
                   </li>
                 </ul>
               </div>
-              <div className="widget">
+              <div className='widget'>
                 <ul>
                   <li>Croydon</li>
                 </ul>
@@ -132,10 +132,10 @@ const Footer = () => {
             {/*  End:Quick Link  */}
 
             {/*  Start:Latest post   */}
-            <div className="col-lg-3 col-sm-12">
-              <div className="widget">
+            <div className='col-lg-3 col-sm-12'>
+              <div className='widget'>
                 <h5>Address</h5>
-                <div className="footer_recent_blog">
+                <div className='footer_recent_blog'>
                   <div>Direct Windows London</div>
                   <div>113 Stafford Road</div>
                   <div>Croydon</div>
@@ -147,58 +147,57 @@ const Footer = () => {
             {/*  End:Latest post  */}
 
             {/*  Start:Newsletter  */}
-            <div className="col-lg-3 col-sm-12">
-              <div className="widget">
+            <div className='col-lg-3 col-sm-12'>
+              <div className='widget'>
                 <h5>Help & Advice</h5>
                 {/*  Start:Subscribe  */}
                 {/* <div className="news_letter_wrp"> */}
-                <div className="widget quick_lnk">
+                <div className='widget quick_lnk'>
                   <ul>
                     <li>
-                      <Link href="/maintenance">Maintenance / Tips / FAQ's</Link>
+                      <Link href='/maintenance'>Maintenance / Tips / FAQ's</Link>
                     </li>
                     <li>
-                      <Link href="/about">About Us</Link>
+                      <Link href='/about'>About Us</Link>
                     </li>
                     <li>
-                      <Link href="/cookies">Cookies & Privacy Policy</Link>
+                      <Link href='/cookies'>Cookies & Privacy Policy</Link>
                     </li>
                     {/* <li>
                       <Link href="/about">Valid HTML5</Link>
                     </li> */}
                     <li>
-                      <Link href="http://www.adtrak.co.uk/">Web Design by Adtrak</Link>
+                      <Link href='http://www.adtrak.co.uk/'>Web Design by Adtrak</Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <button className={`scrollup ${scroll > top ? "show" : ""}`} onClick={() => scrollToTop()}>
-              <span className="icon-glyph-203"></span>
+            <button className={`scrollup ${scroll > top ? 'show' : ''}`} onClick={() => scrollToTop()}>
+              <span className='icon-glyph-203'></span>
             </button>
           </div>
         </div>
         {/*  Start:Subfooter  */}
-        <div className="subfooter">
-          <div className=" justify-content-center h5 row">
+        <div className='subfooter'>
+          <div className=' justify-content-center h5 row'>
             <a href={`tel:${CONTACT.phone}`}>
-              <div className="col-sm-12 mr-2" style={{ color: "whitesmoke" }}>
-                <i className="fa fa-phone"></i> <i>{CONTACT.phone}</i>
+              <div className='col-sm-12 mr-2' style={{ color: 'whitesmoke' }}>
+                <i className='fa fa-phone'></i> <i>{CONTACT.phone}</i>
               </div>
             </a>
           </div>
-          <div className=" justify-content-center h4 row">
+          <div className=' justify-content-center h4 row'>
             <a href={`mailto:${CONTACT.email}`}>
-              <div className="col-sm-12 h5" style={{ color: "whitesmoke" }}>
-              
-                <i className="fa fa-envelope mr-2" />
+              <div className='col-sm-12 h5' style={{ color: 'whitesmoke' }}>
+                <i className='fa fa-envelope mr-2' />
                 <i>{CONTACT.email}</i>
               </div>
             </a>
           </div>
-          <div className="d-flex justify-content-center">
-            <div className="h5">Windows Direct London </div>
+          <div className='d-flex justify-content-center'>
+            <div className='h5'>Windows Direct London </div>
             <div style={{ marginLeft: 5 }}>{` is a registered company in England`}</div>
           </div>
 

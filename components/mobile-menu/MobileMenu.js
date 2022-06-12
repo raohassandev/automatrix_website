@@ -39,14 +39,14 @@ const MobileMenu = () => {
   };
 
   return (
-    <div className="offcanvasMobileMenu" id="offcanvas-mobile-menu">
-      <button className="offcanvasMenuClose" id="mobile-menu-close-trigger" onClick={() => closeMobileMenu()}>
-        <i className="icon-glyph-146"></i>
+    <div className='offcanvasMobileMenu' id='offcanvas-mobile-menu'>
+      <button className='offcanvasMenuClose' id='mobile-menu-close-trigger' onClick={() => closeMobileMenu()}>
+        <i className='icon-glyph-146'></i>
       </button>
 
-      <div className="offcanvasWrapper">
-        <div className="offcanvasInnerContent">
-          <nav className="offcanvasNavigation" id="offcanvas-navigation">
+      <div className='offcanvasWrapper'>
+        <div className='offcanvasInnerContent'>
+          <nav className='offcanvasNavigation' id='offcanvas-navigation'>
             {/* <ul>
               <li>
                 <Link href="/">Home</Link>
@@ -87,34 +87,34 @@ const MobileMenu = () => {
 
             </ul> */}
             <ul>
-              <li className="active">
-                <Link href="/">Home </Link>
+              <li className='active'>
+                <Link href='/'>Home </Link>
               </li>
-              <li className="has-sub">
+              <li className='has-sub'>
                 {/* <Link href="#/">Windows</Link> */}
                 <h4>Windows</h4>
                 <ul>
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("window", "upvc_window"),
+                        pathname: '/single-services',
+                        query: getProduct('window', 'upvc_window'),
                       }}>
                       uPVC Windows
                     </Link>
                   </li>
                   <li>
-                    <Link href={{ pathname: "/single-services", query: getProduct("window", "casement_window") }}>
+                    <Link href={{ pathname: '/single-services', query: getProduct('window', 'casement_window') }}>
                       Casement Windows
                     </Link>
                   </li>
                   <li>
-                    <Link href={{ pathname: "/single-services", query: getProduct("window", "aluminium_window") }}>
+                    <Link href={{ pathname: '/single-services', query: getProduct('window', 'aluminium_window') }}>
                       Aluminium Windows
                     </Link>
                   </li>
                   <li>
-                    <Link href={{ pathname: "/single-services", query: getProduct("window", "sash_window") }}>
+                    <Link href={{ pathname: '/single-services', query: getProduct('window', 'sash_window') }}>
                       Sash Windows
                     </Link>
                   </li>
@@ -128,15 +128,15 @@ const MobileMenu = () => {
               </li>
 
               <hr />
-              <li className="has-sub">
+              <li className='has-sub'>
                 {/* <Link href="/">Doors</Link> */}
                 <h4>Doors</h4>
                 <ul>
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("door", "upvc_door"),
+                        pathname: '/single-services',
+                        query: getProduct('door', 'upvc_door'),
                       }}>
                       uPVC Doors
                     </Link>
@@ -144,8 +144,8 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("door", "composite_door"),
+                        pathname: '/single-services',
+                        query: getProduct('door', 'sliding_door'),
                       }}>
                       Composite Doors
                     </Link>
@@ -153,17 +153,17 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("door", "patio_door"),
+                        pathname: '/single-services',
+                        query: getProduct('door', 'single_door'),
                       }}>
-                      Patio Doors
+                      Single Doors
                     </Link>
                   </li>
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("door", "bi_folding_door"),
+                        pathname: '/single-services',
+                        query: getProduct('door', 'bi_folding_door'),
                       }}>
                       Bi-Folding Doors
                     </Link>
@@ -171,15 +171,15 @@ const MobileMenu = () => {
                 </ul>
               </li>
               <hr />
-              <li className="has-sub">
+              <li className='has-sub'>
                 {/* <Link href="/blog">Conservatories</Link> */}
                 <h4>Conservatories</h4>
                 <ul>
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("conservatory", "upvc_conservatory"),
+                        pathname: '/single-services',
+                        query: getProduct('conservatory', 'upvc_conservatory'),
                       }}>
                       uPVC Conservatories
                     </Link>
@@ -187,8 +187,8 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("conservatory", "edwardian_conservatory"),
+                        pathname: '/single-services',
+                        query: getProduct('conservatory', 'edwardian_conservatory'),
                       }}>
                       Edwardian Conservatories
                     </Link>
@@ -196,8 +196,8 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("conservatory", "victorian_conservatory"),
+                        pathname: '/single-services',
+                        query: getProduct('conservatory', 'victorian_conservatory'),
                       }}>
                       Victorian Conservatories
                     </Link>
@@ -205,8 +205,8 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: "/single-services",
-                        query: getProduct("conservatory", "p_shaped_conservatory"),
+                        pathname: '/single-services',
+                        query: getProduct('conservatory', 'p_shaped_conservatory'),
                       }}>
                       P-Shape Conservatories
                     </Link>
@@ -218,8 +218,8 @@ const MobileMenu = () => {
               <li>
                 <Link
                   href={{
-                    pathname: "/single-services",
-                    query: getProduct("glazing", "triple_glazing"),
+                    pathname: '/single-services',
+                    query: getProduct('glazing', 'triple_glazing'),
                   }}>
                   Triple Glazing
                 </Link>
@@ -228,15 +228,15 @@ const MobileMenu = () => {
               <li>
                 <Link
                   href={{
-                    pathname: "/single-services",
-                    query: getProduct("schuco", "schuco"),
+                    pathname: '/single-services',
+                    query: getProduct('schuco', 'schuco'),
                   }}>
                   Schüco
                 </Link>
               </li>
               <hr />
               <li>
-                <Link href="/contact">Latest News</Link>
+                <Link href='/contact'>Latest News</Link>
               </li>
               {/* <li className="has-sub">
                     <Link href="/shop">Shop</Link>
@@ -258,58 +258,58 @@ const MobileMenu = () => {
 
               <hr />
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link href='/contact'>Contact</Link>
               </li>
               <hr />
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href='/about'>About Us</Link>
               </li>
               <hr />
             </ul>
           </nav>
 
           {/* Search Form */}
-          <div className="offcanvasMobileSearchArea">
-            <form action="#">
-              <input type="search" placeholder="Search ..." />
-              <button type="submit"></button>
+          <div className='offcanvasMobileSearchArea'>
+            <form action='#'>
+              <input type='search' placeholder='Search ...' />
+              <button type='submit'></button>
             </form>
           </div>
 
           {/* Contact Info  */}
 
-          <div className="header_top_right list-unstyled">
+          <div className='header_top_right list-unstyled'>
             <ul>
               <li>
-                <a className="fa " href={`tel:${CONTACT.phone}`}>
-                  <i className="fa fa-phone">{CONTACT.phone}</i>
+                <a className='fa ' href={`tel:${CONTACT.phone}`}>
+                  <i className='fa fa-phone'>{CONTACT.phone}</i>
                 </a>
               </li>
               <li>
-                <a className="fa " href={`mailto:${CONTACT.email}`}>
-                  <i className="fa fa-envelope"> {" " + CONTACT.email}</i>
+                <a className='fa ' href={`mailto:${CONTACT.email}`}>
+                  <i className='fa fa-envelope'> {' ' + CONTACT.email}</i>
                 </a>
               </li>
               <li>
-                <i className="fa fa-globe">{" " + CONTACT.address}</i>
+                <i className='fa fa-globe'>{' ' + CONTACT.address}</i>
               </li>
             </ul>
           </div>
 
           {/* Social Icon*/}
-          <div className="header_top_left">
-            <ul className="header_socil list-inline">
+          <div className='header_top_left'>
+            <ul className='header_socil list-inline'>
               <li>
-                <a href="#/" className="fa fa-facebook"></a>
+                <a href='#/' className='fa fa-facebook'></a>
               </li>
               <li>
-                <a href="#/" className="fa fa-twitter"></a>
+                <a href='#/' className='fa fa-twitter'></a>
               </li>
               <li>
-                <a href="#/" className="fa fa-linkedin"></a>
+                <a href='#/' className='fa fa-linkedin'></a>
               </li>
               <li>
-                <a href="#/" className="fa fa-google-plus"></a>
+                <a href='#/' className='fa fa-google-plus'></a>
               </li>
             </ul>
           </div>

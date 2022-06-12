@@ -20,7 +20,7 @@ import ContactForm2 from "../components/ContactForm";
 const Home = () => {
   return (
     <Fragment>
-      <LayoutOne pageTitle="Windows Direct">
+      <LayoutOne pageTitle='Supreme Windows'>
         <Slides />
         <AboutContent />
         <ServiceContent />

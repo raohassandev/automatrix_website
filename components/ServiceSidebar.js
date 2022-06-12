@@ -4,39 +4,13 @@ import { getProduct, getServiceList } from "../helpers/getProduct";
 import { CONTACT } from "../helpers/products";
 
 const ServiceSidebar = () => {
-  // const serviceListArray = [
-  //   {
-  //     serviceTitle: "uPVC WINDOWS",
-  //     sidebarLink: "single-services",
-  //   },
-  //   {
-  //     serviceTitle: "Fresh Fruits ",
-  //     sidebarLink: "single-services",
-  //   },
-  //   {
-  //     serviceTitle: "Natural Wheats",
-  //     sidebarLink: "single-services",
-  //   },
-  //   {
-  //     serviceTitle: "Red Watermelon",
-  //     sidebarLink: "single-services",
-  //   },
-  //   {
-  //     serviceTitle: "Juicy Grapes",
-  //     sidebarLink: "single-services",
-  //   },
-  //   {
-  //     serviceTitle: "Fresh Banana",
-  //     sidebarLink: "single-services",
-  //   },
-  // ];
   const serviceListArray = getServiceList();
   const serviceListMap = serviceListArray.map((item, i) => {
     return (
       <li key={i}>
         <Link
           href={{
-            pathname: "/single-services",
+            pathname: '/single-services',
             query: getProduct(item.type, item.key),
           }}>
           {item.serviceTitle}
@@ -46,33 +20,33 @@ const ServiceSidebar = () => {
   });
 
   return (
-    <div className="single_service_right">
-      <div className="single_service_cat">
+    <div className='single_service_right'>
+      <div className='single_service_cat'>
         <ul>{serviceListMap}</ul>
       </div>
-      <div className="service_contact">
+      <div className='service_contact'>
         <h4>Contact </h4>
-        <div className="serv_contact_wrp">
-          <div className="single-contact-info">
-            <a className="fa " href={`tel:${CONTACT.phone}`}>
-              <i className="fa fa-phone"></i>
+        <div className='serv_contact_wrp'>
+          <div className='single-contact-info'>
+            <a className='fa ' href={`tel:${CONTACT.phone}`}>
+              <i className='fa fa-phone'></i>
 
               <p>{CONTACT.phone}</p>
             </a>
           </div>
-          <div className="single-contact-info">
-            <a className="mr-2" href={`mailto:${CONTACT.email}`}>
-              <i className="fa fa-envelope"></i>
-
-              {CONTACT.email}
-            </a>
-          </div>
-          <div className="single-contact-info">
-            <i className="fa fa-globe"></i>
+          <div className='single-contact-info'>
+            <i className='fa fa-envelope'></i>
             {/* <p>
               #27, East Madison Ave, <br /> Melbourne, Australia
             </p> */}
-            <p style={{ width: "90%" }}>{CONTACT.address}</p>
+            <p style={{ width: '80%' }}>{CONTACT.email}</p>
+          </div>
+          <div className='single-contact-info'>
+            <i className='fa fa-globe'></i>
+            {/* <p>
+              #27, East Madison Ave, <br /> Melbourne, Australia
+            </p> */}
+            <p style={{ width: '90%' }}>{CONTACT.address}</p>
           </div>
         </div>
       </div>

@@ -179,18 +179,14 @@ const Footer = () => {
         {/*  Start:Subfooter  */}
         <div className='subfooter'>
           <div className=' justify-content-center h5 row'>
-            <a href={`tel:${CONTACT.phone}`}>
-              <div className='col-sm-12 mr-2' style={{ color: 'whitesmoke' }}>
-                <i className='fa fa-phone'></i> <i>{CONTACT.phone}</i>
-              </div>
+            <a href={`tel:${CONTACT.phone}`} style={{ color: 'whitesmoke', fontSize: 20 }}>
+              <i className='fa fa-phone'></i> <i style={{}}>{CONTACT.phone}</i>
             </a>
           </div>
           <div className=' justify-content-center h4 row'>
-            <a href={`mailto:${CONTACT.email}`}>
-              <div className='col-sm-12 h5' style={{ color: 'whitesmoke' }}>
-                <i className='fa fa-envelope mr-2' />
-                <i>{CONTACT.email}</i>
-              </div>
+            <a href={`mailto:${CONTACT.email}`} style={{ color: 'whitesmoke', fontSize: 18 }}>
+              <i className='fa fa-envelope mr-2' />
+              <i>{CONTACT.email}</i>
             </a>
           </div>
           <div className='d-flex justify-content-center'>

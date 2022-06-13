@@ -4,58 +4,49 @@ import { CONTACT } from "../helpers/products";
 
 const Header = () => {
   return (
-    <div className="header_topbar">
+    <div className='header_topbar'>
       {/* <Link href="/">
               <img src="assets/images/logo.jpeg" alt="" style={{ marginBottom: -50 }} />
       </Link> */}
-      <div className="container">
-        <div className="header_top_right list-unstyled">
+      <div className='container'>
+        <div className='header_top_right list-unstyled'>
           <ul>
             <li>
               <a href={`tel:${CONTACT.phone}`}>
-                <i className="fa fa-phone"> </i>
+                <i className='fa fa-phone'> </i>
               </a>
               {CONTACT.phone}
             </li>
             <li>
-              <i className="fa fa-globe"></i>
+              <i className='fa fa-globe'></i>
               {CONTACT.address}
             </li>
           </ul>
         </div>
-        <div className="header_top_left">
-          <ul className="header_socil list-inline pull-left">
+        <div className='header_top_left'>
+          <ul className='header_socil list-inline pull-left'>
             <li>
               <a href={`mailto:${CONTACT.email}`}>
-                <i className="fa fa-envelope"></i>
+                <i className='fa fa-envelope'></i>
               </a>
               {CONTACT.email}
             </li>
             <li>
               <a
-                href="https://www.facebook.com/WindowsDirectLondon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-facebook"></i>
+                href='https://www.facebook.com/Supreme-Windows-London-232011017739004/'
+                target='_blank'
+                rel='noopener noreferrer'>
+                <i className='fa fa-facebook'></i>
               </a>
             </li>
             <li>
-              <a
-                href="https://twitter.com/windowsdirect1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-twitter"></i>
+              <a href='https://twitter.com/windowsdirect1' target='_blank' rel='noopener noreferrer'>
+                <i className='fa fa-twitter'></i>
               </a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/windowsdirectlondon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-instagram"></i>
+              <a href='https://www.instagram.com/windowsdirectlondon' target='_blank' rel='noopener noreferrer'>
+                <i className='fa fa-instagram'></i>
               </a>
             </li>
             {/* <li>
@@ -65,8 +56,8 @@ const Header = () => {
             </li> */}
           </ul>
         </div>
-        <Link href="/contact">
-          <a className="more-link">Get a quote</a>
+        <Link href='/contact'>
+          <a className='more-link'>Get a quote</a>
         </Link>
       </div>
     </div>

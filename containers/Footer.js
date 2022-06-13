@@ -136,11 +136,8 @@ const Footer = () => {
               <div className='widget'>
                 <h5>Address</h5>
                 <div className='footer_recent_blog'>
-                  <div>Direct Windows London</div>
-                  <div>113 Stafford Road</div>
-                  <div>Croydon</div>
-                  <div>Surrey</div>
-                  <div>CR0 4NN</div>
+                  <div>Supreme Windows London</div>
+                  <div>{CONTACT.address}</div>
                 </div>
               </div>
             </div>
@@ -197,11 +194,11 @@ const Footer = () => {
             </a>
           </div>
           <div className='d-flex justify-content-center'>
-            <div className='h5'>Windows Direct London </div>
+            <div className='h5'>Supreme Windows London </div>
             <div style={{ marginLeft: 5 }}>{` is a registered company in England`}</div>
           </div>
 
-          <p>© Windows Direct London 2022 All Rights Reserved.</p>
+          <p>© Supreme Windows London 2022 All Rights Reserved.</p>
         </div>
         {/* End:Subfooter  */}
       </footer>

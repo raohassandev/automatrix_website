@@ -23,7 +23,7 @@ class ContactForm2 extends Component {
                 <div className="contact_wrp">
                   <div className="row">
                    
-                    <div className="col-md-8 col-sm-12 inner-contact">
+                    <div className="col-md-12 col-sm-12 inner-contact">
                       <div className="contact-form">
                         <div id="message">
                           {this.state.flag ? (

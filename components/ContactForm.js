@@ -11,122 +11,120 @@ class ContactForm2 extends Component {
   render() {
     return (
       <Fragment>
-
-          <div className="contact-page">
-            {/*====================  Contact Form  area  ====================*/}
-            <section className="contact-section">
-              <div className="container">
-                <div className="base-header">
-                  <small>Get in touch</small>
-                  <h3>Send Us Message</h3>
-                </div>
-                <div className="contact_wrp">
-                  <div className="row">
-                   
-                    <div className="col-md-12 col-sm-12 inner-contact">
-                      <div className="contact-form">
-                        <div id="message">
-                          {this.state.flag ? (
-                            <div className="alert alert-success">
-                              <strong>{this.state.return_msg}</strong>
-                            </div>
-                          ) : null}
-                        </div>
-                        <form method="post" name="contact-form" id="contact-form">
-                          <div className="row">
-                            <div className="col-lg-6 col-sm-12">
-                              <input
-                                type="text"
-                                id="name"
-                                value={this.state.name}
-                                onChange={this.handleChangeName}
-                                className="con-field form-control"
-                                placeholder="Name"
-                              />
-                              <span id="err" className="text-danger">
-                                {this.state.name_err}
-                              </span>
-                            </div>
-                            <div className="col-lg-6 col-sm-12">
-                              <input
-                                type="text"
-                                className="con-field form-control"
-                                value={this.state.phone}
-                                onChange={this.handleChangePhone}
-                                id="phone"
-                                placeholder="Phone"
-                              />
-                              <span id="err" className="text-danger">
-                                {this.state.phone_err}
-                              </span>
-                            </div>
-                            <div className="col-lg-12 col-sm-12">
-                              <input
-                                type="text"
-                                className="con-field form-control"
-                                value={this.state.email}
-                                onChange={this.handleChangeEmail}
-                                id="exampleInputEmail1"
-                                placeholder="Email"
-                              />
-                              <span id="err" className="text-danger">
-                                {this.state.email_err}
-                              </span>
-
-                              <input
-                                type="text"
-                                id="subject"
-                                value={this.state.subject}
-                                onChange={this.handleChangeSubject}
-                                className="form-control con-field"
-                                placeholder="Subject"
-                              />
-                              <span id="err" className="text-danger">
-                                {this.state.subject_err}
-                              </span>
-                            </div>
+        <div className='contact-page'>
+          {/*====================  Contact Form  area  ====================*/}
+          <section className='contact-section'>
+            <div className='container'>
+              <div className='base-header'>
+                <small>Get in touch</small>
+                <h3>Send Us Message</h3>
+              </div>
+              <div className='contact_wrp'>
+                <div className='row'>
+                  <div className='col-md-12 col-sm-12  col-lg-8 inner-contact'>
+                    <div className='contact-form'>
+                      <div id='message'>
+                        {this.state.flag ? (
+                          <div className='alert alert-success'>
+                            <strong>{this.state.return_msg}</strong>
                           </div>
-                          <div className="row">
-                            <div className="col-lg-12 col-sm-12">
-                              <textarea
-                                name="comments"
-                                id="comments"
-                                value={this.state.message}
-                                onChange={this.handleChangeMessage}
-                                rows="6"
-                                className="form-control con-field"
-                                placeholder="Your Message"></textarea>
-                              <span id="err" className="text-danger">
-                                {this.state.message_err}
-                              </span>
-                              <div className="submit-area">
-                                <input
-                                  type="button"
-                                  id="submit"
-                                  name="send"
-                                  onClick={this.handleSubmit1}
-                                  // onClick={()=> console.log('text')}
-                                  className="submit-contact submitBnt"
-                                  value="Send Message"
-                                />
-                                <div id="simple-msg"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
+                        ) : null}
                       </div>
+                      <form method='post' name='contact-form' id='contact-form'>
+                        <div className='row'>
+                          <div className='col-lg-6 col-sm-12'>
+                            <input
+                              type='text'
+                              id='name'
+                              value={this.state.name}
+                              onChange={this.handleChangeName}
+                              className='con-field form-control'
+                              placeholder='Name'
+                            />
+                            <span id='err' className='text-danger'>
+                              {this.state.name_err}
+                            </span>
+                          </div>
+                          <div className='col-lg-6 col-sm-12'>
+                            <input
+                              type='text'
+                              className='con-field form-control'
+                              value={this.state.phone}
+                              onChange={this.handleChangePhone}
+                              id='phone'
+                              placeholder='Phone'
+                            />
+                            <span id='err' className='text-danger'>
+                              {this.state.phone_err}
+                            </span>
+                          </div>
+                          <div className='col-lg-12 col-sm-12'>
+                            <input
+                              type='text'
+                              className='con-field form-control'
+                              value={this.state.email}
+                              onChange={this.handleChangeEmail}
+                              id='exampleInputEmail1'
+                              placeholder='Email'
+                            />
+                            <span id='err' className='text-danger'>
+                              {this.state.email_err}
+                            </span>
+
+                            <input
+                              type='text'
+                              id='subject'
+                              value={this.state.subject}
+                              onChange={this.handleChangeSubject}
+                              className='form-control con-field'
+                              placeholder='Subject'
+                            />
+                            <span id='err' className='text-danger'>
+                              {this.state.subject_err}
+                            </span>
+                          </div>
+                        </div>
+                        <div className='row'>
+                          <div className='col-lg-12 col-sm-12'>
+                            <textarea
+                              name='comments'
+                              id='comments'
+                              value={this.state.message}
+                              onChange={this.handleChangeMessage}
+                              rows='6'
+                              className='form-control con-field'
+                              placeholder='Your Message'></textarea>
+                            <span id='err' className='text-danger'>
+                              {this.state.message_err}
+                            </span>
+                            <div className='submit-area'>
+                              <input
+                                type='button'
+                                id='submit'
+                                name='send'
+                                onClick={this.handleSubmit1}
+                                // onClick={()=> console.log('text')}
+                                className='submit-contact submitBnt'
+                                value='Send Message'
+                              />
+                              <div id='simple-msg'></div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
                     </div>
-
-                    {/*===  Contact Details  ===*/}
-                    {ContactDetailsBox}
-
-                    {/*===  end: Contact Details  ===*/}
                   </div>
+
+                  {/*===  Contact Details  ===*/}
+                  {ContactDetailsBox}
+
+                  {/*===  end: Contact Details  ===*/}
                 </div>
               </div>
-            </section>
-            {/*====================  End: Contact Form area  ====================*/}
-          </div>
+            </div>
+          </section>
+          {/*====================  End: Contact Form area  ====================*/}
+        </div>
       </Fragment>
     );
   }

@@ -12,12 +12,12 @@ const Cookies = () => {
           title="temp"
         /> */}
 
-        <div className="container-fluid display-1 justify-content-center d-flex">Cookies & Privacy Policy</div>
+        <div className='container-fluid display-1 justify-content-center d-flex'>Cookies & Privacy Policy</div>
 
-        <div className="single-services-page">
+        <div className='single-services-page'>
           {/*====================  Single Services area ====================*/}
-          <div className="single_service">
-            <div className="container">
+          <div className='single_service'>
+            <div className='container'>
               <h2>Cookies</h2>
               <p>Prevention is better than cure</p>
 
@@ -30,9 +30,9 @@ const Cookies = () => {
               </p>
               <p>We also use cookies in order to geo-target specific users to make websites more personal.</p>
               <p>
-                By using the website of <strong>Windows Direct London</strong> you consent to the usage of data captured
-                by the use of cookies. If you wish to turn off cookies, please adjust your browser settings. Our website
-                will continue to function without cookies.
+                By using the website of <strong>Supreme Windows London</strong> you consent to the usage of data
+                captured by the use of cookies. If you wish to turn off cookies, please adjust your browser settings.
+                Our website will continue to function without cookies.
               </p>
               <h2>Personal identification information</h2>
               <p>
@@ -62,14 +62,14 @@ const Cookies = () => {
               </p>
               <h2>Privacy Policy</h2>
               <p>
-                This is the web site of <strong>Windows Direct London.</strong>
+                This is the web site of <strong>Supreme Windows London.</strong>
               </p>
               <p>Our postal address is .</p>
               <p>
-                We can be reached via e-mail at{" "}
-                <a style={{ textDecorationLine: "underline" }} href={`mailto:${CONTACT.email}`}>
+                We can be reached via e-mail at{' '}
+                <a style={{ textDecorationLine: 'underline' }} href={`mailto:${CONTACT.email}`}>
                   info@windowsdirectlondon.co.uk
-                </a>{" "}
+                </a>{' '}
                 or you can reach us by telephone at 020 3124 1681.
               </p>
               <p>

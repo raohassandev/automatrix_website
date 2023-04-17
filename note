@@ -1,3 +1,7 @@
 change the assetPrefix
 find:   "/_next/static/
 replace: "./_next/static/
+
+
+https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported/69699772#69699772
+

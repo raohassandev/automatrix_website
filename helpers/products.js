@@ -216,6 +216,6 @@ export const CONTACT = {
   name: 'Supreme Windows London',
   phone: '020 8050 4602',
   email: 'supremewindowslondon@gmail.com',
-  address: 'Roman industrial estate Unit 7 Tait road CR0 2DT',
+  address: '71 Bensham grove Thorton heath CR7 8DX',
   location: { latitude: '51.38463', longitude: '-0.08895' },
 };

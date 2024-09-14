@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
-import LayoutOne from "../layouts/LayoutOne"; 
+
 import Breadcrumb from "../components/Breadcrumb";
+import LayoutOne from "../layouts/LayoutOne";
 
 const AboutPg = () => {
   return (
     <Fragment>
         
-      <LayoutOne pageTitle="Supreme-Windows-London"> 
+      <LayoutOne pageTitle="Automatrix"> 
 
         <Breadcrumb 
           bgImg={('/assets/images/header.jpg')}

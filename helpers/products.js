@@ -2,20 +2,27 @@ import { images } from '../public/assets/images';
 
 const windows = {
   main: {
-    name: 'Windows',
+    name: 'Industrial Automation',
     image: images.windows.aluminium.withBlind,
-    title: 'Double Glazed Windows in Croydon & Surrey',
+    title: 'Industrial Automation',
     miniDes: '',
     desPartOne:
-      'If you are looking for double glazed windows, look no further than Supreme Windows London! As a comprehensive supplier of an extensive range of windows, our selection includes a host of different styles, designs and finishes. This means that whatever your requirements, we will have the ideal windows for you and can ensure a finished result which beautifully complements, and enhances, the visual appeal of your property.',
-    desPartTwo:
-      'All of our products are tailored to your specifications, however unique they may be, and because we manufacture all of our products ourselves, you can even see your new windows being made! Whether you require a full set of new windows or simply a couple of replacement windows, our team work closely with you to establish your needs, tastes and budget and then provide a solution which accurately reflects these criteria.\nOur dedicated team of fully trained and highly skilled technicians perform installations of the highest quality and, as all of our products carry a 10 year insurance-backed guarantee as standard, you can rest assured of double glazed windows that will last for years to come.\nSo have a look at our different styles of windows today and give us a call at Supreme Windows London to discuss your requirements with a member of our highly experienced team or visit our showroom in Croydon.',
+      'Industrial automation in power generation and consumption is a transformative approach that integrates advanced technologies to optimize the efficiency and reliability of power systems. This automation process encompasses a range of activities, from monitoring and controlling power generation to synchronizing solar power plants with generators and the grid. By leveraging cutting-edge control systems and data analytics, industrial automation ensures seamless operation, minimizes downtime, and enhances overall energy management.',
+    desPartTwo: `Power Generation: Automated systems streamline the generation of electricity by controlling and monitoring various aspects of power plants. This includes real-time adjustments to maintain optimal performance, predictive maintenance to prevent failures, and efficient load management to balance supply with demandPower Generation: Automated systems streamline the generation of electricity by controlling and monitoring various aspects of power plants. This includes real-time adjustments to maintain optimal performance, predictive maintenance to prevent failures, and efficient load management to balance supply with demand.
+      \nPower Consumption: Automation in power consumption focuses on optimizing energy use across industrial processes. Smart meters and sensors track energy usage, while advanced algorithms adjust consumption patterns to reduce costs and improve efficiency.
+      \n\nMonitoring: Comprehensive monitoring systems provide real-time visibility into the health and performance of power generation and consumption systems. This includes tracking key metrics, detecting anomalies, and generating detailed reports to aid in decision-making and proactive maintenance.
+      \n\nControlling: Automated control systems enable precise management of power systems, including automatic adjustments to operational parameters, response to changing conditions, and integration with other systems to ensure consistent and reliable power delivery.
+      \n\nSolar Power Plant Synchronization: For solar power plants, automation facilitates seamless synchronization with both the grid and backup generators. This involves coordinating the generation from solar panels with grid demand and ensuring smooth transitions between solar and generator power, enhancing stability and reliability.
+      \n\nGrid Integration: Automated systems play a crucial role in integrating diverse power sources with the grid, managing fluctuations, and ensuring stable energy supply. This includes real-time communication with grid operators and automatic adjustments to match grid requirements.
+      \n\nBy incorporating these automation solutions, industrial facilities can achieve greater efficiency, reduce operational costs, and enhance the sustainability of their power system.
+       `,
   },
   upvc_window: {
     name: 'uPVC Windows',
     image: 'upvc-windows.jpeg',
     title: 'uPVC Windows in Croydon & Surrey',
-    miniDes: 'Enduringly popular, stylish and simple, easy to maintain.uPVC Windows',
+    miniDes:
+      'Enduringly popular, stylish and simple, easy to maintain.uPVC Windows',
     desPartOne:
       'One of the most enduringly popular types of window, uPVC windows offer a host of practical benefits whilst also dramatically enhancing the aesthetic appeal of your home. Their low maintenance finish means that they are incredibly easy to keep clean and do not rot , rust or fade over time. They also improve the security and insulation of your home, eradicating draughts and noise pollution.',
     desPartTwo:
@@ -26,7 +33,8 @@ const windows = {
     // image: 'casement-windows.jpeg',
     image: images.windows.casement.inner,
     title: 'Casement Windows in Croydon & Surrey',
-    miniDes: 'Range of styles, beautiful design, excellent ventilation.Casement Windows',
+    miniDes:
+      'Range of styles, beautiful design, excellent ventilation.Casement Windows',
     desPartOne:
       'Here at Supreme Windows London, our comprehensive service includes the manufacture, supply and installation of a range of casement windows. Combining beautiful design with complete functionality, they offer a wealth of practical benefits whilst also adding a touch of luxury to your home. Offered in a range of styles and finishes, we guarantee to have the perfect casement window for your requirements, tastes and budget..',
     desPartTwo:
@@ -36,7 +44,8 @@ const windows = {
     name: 'Aluminium Windows',
     image: images.windows.aluminium.single,
     title: 'Aluminium Windows in Croydon & Surrey',
-    miniDes: 'Sleek, sophisticated finish, strong and durable materials.Aluminium Windows',
+    miniDes:
+      'Sleek, sophisticated finish, strong and durable materials.Aluminium Windows',
     desPartOne:
       'If you are looking for high quality aluminium windows, look no further than Supreme Windows London! We specialise in the supply and installation of a range of metal windows and manufacture them ourselves, ensuring that they are tailored to meet your exact requirements. Aluminium windows benefit from their strong, durable materials and offer an elegant finish which is both thermally efficient and comprehensively secure.',
     desPartTwo:
@@ -46,7 +55,8 @@ const windows = {
     name: 'Sash Windows',
     image: 'sash-windows.jpeg',
     title: 'Sash Windows in Croydon & Surrey',
-    miniDes: 'Traditional design, elegant finish, modern functionality.Sash Windows',
+    miniDes:
+      'Traditional design, elegant finish, modern functionality.Sash Windows',
     desPartOne:
       'Sash windows are one of the most traditional styles of window but, often associated with Victorian and Georgian properties, they have a reputation for rattles, draughts and peeling, damaged frames. However, here at Supreme Windows London we manufacture, supply and install a large selection of double glazed sash windows which combine elegant, traditional design with the functionality of modern materials, such as uPVC.',
     desPartTwo:
@@ -59,7 +69,8 @@ const doors = {
     name: 'Doors',
     image: images.doors.bifold.inner,
     title: 'Doors in Croydon & Surrey',
-    miniDes: 'Incredibly popular, stylish and modern, low-maintenance finish.uPVC Doors',
+    miniDes:
+      'Incredibly popular, stylish and modern, low-maintenance finish.uPVC Doors',
     desPartOne:
       'Your door is often one of the first things people notice about your home and, when chosen correctly, it can create a warm and welcoming invitation, setting the tone for the style of your property. Here at Supreme Windows London, we offer an extensive range of doors, offered in a wide variety of styles, designs and finishes, ensuring that we have the perfect door to complement your home and protect your property.',
     desPartTwo:
@@ -69,7 +80,8 @@ const doors = {
     name: 'uPVC Doors',
     image: 'upvc-doors.jpeg',
     title: 'uPVC Doors in Croydon & Surrey',
-    miniDes: 'Incredibly popular, stylish and modern, low-maintenance finish.uPVC Doors',
+    miniDes:
+      'Incredibly popular, stylish and modern, low-maintenance finish.uPVC Doors',
     desPartOne:
       'If you are looking for a high quality, beautifully designed uPVC door, look no further than the experts at Supreme Windows London! We specialise in the supply and installation of an extensive range of doors, including uPVC front doors and uPVC back doors. Our dedicated team work closely with you, from your initial ideas through to the design, manufacture and final installation, ensuring a finished result which accurately reflects your individual requirements.',
     desPartTwo:
@@ -79,7 +91,8 @@ const doors = {
     name: 'Sliding Doors',
     image: images.doors.sliding.outer,
     title: 'Sliding Doors in Croydon & Surrey',
-    miniDes: 'Strong and durable materials, complete protection, elegant design. Sliding Doors',
+    miniDes:
+      'Strong and durable materials, complete protection, elegant design. Sliding Doors',
     desPartOne:
       'Sliding doors are known for their strength and durability, as well as the comprehensive level of security they provide. We offer a huge selection of sliding doors here at Supreme Windows London, all of which combine beautiful, elegant design with a wealth of practical benefits. Not only will our sliding front doors enhance the visual appeal of your property, they will also enhance your thermal efficiency, eradicate draughts and noise pollution and completely protect your home.',
     desPartTwo:
@@ -89,7 +102,8 @@ const doors = {
     name: 'Single Doors',
     image: images.doors.single.inner_1,
     title: 'Single Doors in Croydon & Surrey',
-    miniDes: 'Beautiful design, wealth of natural light, improved ease of access.Single Doors',
+    miniDes:
+      'Beautiful design, wealth of natural light, improved ease of access.Single Doors',
     desPartOne:
       'Single doors can completely transform your home as they allow you to bring the outside in, helping your room look bigger and brighter, and add a wealth of natural light to your property. They also totally enhance the access to your garden, letting you incorporate your garden into the rest of your home in the summer and allowing you to simply enjoy the beautiful view during the winter.',
     desPartTwo:
@@ -99,7 +113,8 @@ const doors = {
     name: 'Bi Folding Doors',
     image: images.doors.bifold.outer,
     title: 'Bi Folding Doors in Croydon & Surrey',
-    miniDes: 'Enhance your space, quick and simple access, provide lots of light.Bi Folding Doors',
+    miniDes:
+      'Enhance your space, quick and simple access, provide lots of light.Bi Folding Doors',
     desPartOne:
       'Bi fold doors, sometimes also called concertina doors due to their folding opening mechanisms, combine elegant design with a host of practical benefits. They grant complete ease of access to your outdoor space, promoting open-plan living and allowing a wealth of light and air into your property. They open fully and stack neatly together, making a striking design statement and offering a real feature within your home.',
     desPartTwo:
@@ -186,17 +201,17 @@ const schuco = {
 
 export const PRODUCTS = {
   window: {
-    title: 'Windows',
+    title: 'Automation',
     articles: windows,
     image: windows.main.image,
   },
   door: {
-    title: 'doors',
+    title: 'Solar EPC',
     articles: doors,
     image: doors.main.image,
   },
   conservatory: {
-    title: 'Conservatories',
+    title: 'Services',
     articles: conservatories,
     image: conservatories.main.image,
   },
@@ -214,8 +229,8 @@ export const PRODUCTS = {
 
 export const CONTACT = {
   name: 'Supreme Windows London',
-  phone: '020 8050 4602',
-  email: 'supremewindowslondon@gmail.com',
-  address: '71 Bensham grove Thorton heath CR7 8DX',
-  location: { latitude: '51.38463', longitude: '-0.08895' },
+  phone: '0311 1646640',
+  email: 'info@automatrix.pk',
+  address: '97-C, Civic Center, Sarwar Plaza, Sabzazar Lahore',
+  location: { latitude: '31.517932', longitude: '74.267735' },
 };

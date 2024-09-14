@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+
+import { CONTACT } from "../../helpers/products";
 import Link from "next/link";
 import { getProduct } from "../../helpers/getProduct";
-import { CONTACT } from "../../helpers/products";
 
 const MobileMenu = () => {
   useEffect(() => {
@@ -40,7 +41,11 @@ const MobileMenu = () => {
 
   return (
     <div className='offcanvasMobileMenu' id='offcanvas-mobile-menu'>
-      <button className='offcanvasMenuClose' id='mobile-menu-close-trigger' onClick={() => closeMobileMenu()}>
+      <button
+        className='offcanvasMenuClose'
+        id='mobile-menu-close-trigger'
+        onClick={() => closeMobileMenu()}
+      >
         <i className='icon-glyph-146'></i>
       </button>
 
@@ -91,153 +96,53 @@ const MobileMenu = () => {
                 <Link href='/'>Home </Link>
               </li>
               <li className='has-sub'>
-                {/* <Link href="#/">Windows</Link> */}
-                <h4>Windows</h4>
+                <h4>Services</h4>
                 <ul>
                   <li>
                     <Link
                       href={{
-                        pathname: '/single-services',
-                        query: getProduct('window', 'upvc_window'),
-                      }}>
-                      uPVC Windows
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={{ pathname: '/single-services', query: getProduct('window', 'casement_window') }}>
-                      Casement Windows
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={{ pathname: '/single-services', query: getProduct('window', 'aluminium_window') }}>
-                      Aluminium Windows
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={{ pathname: '/single-services', query: getProduct('window', 'sash_window') }}>
-                      Sash Windows
-                    </Link>
-                  </li>
-                  {/* <li> 
-                          <Link href="/about">About Page</Link>
-                        </li>
-                        <li>
-                          <Link href="/team">Team</Link>
-                        </li> */}
-                </ul>
-              </li>
-
-              <hr />
-              <li className='has-sub'>
-                {/* <Link href="/">Doors</Link> */}
-                <h4>Doors</h4>
-                <ul>
-                  <li>
-                    <Link
-                      href={{
-                        pathname: '/single-services',
-                        query: getProduct('door', 'upvc_door'),
-                      }}>
-                      uPVC Doors
+                        pathname: '/automatrix_Pages/Services/PvController',
+                      }}
+                    >
+                      PV DG Synch Controller
                     </Link>
                   </li>
                   <li>
                     <Link
                       href={{
-                        pathname: '/single-services',
-                        query: getProduct('door', 'sliding_door'),
-                      }}>
-                      Composite Doors
+                        pathname: '/automatrix_Pages/Services/EnergyMonitoring',
+                      }}
+                    >
+                      Energy Monitoring System
                     </Link>
                   </li>
                   <li>
                     <Link
                       href={{
-                        pathname: '/single-services',
-                        query: getProduct('door', 'single_door'),
-                      }}>
-                      Single Doors
+                        pathname: '/automatrix_Pages/Services/ScadaSystem',
+                      }}
+                    >
+                      SCADA System
                     </Link>
                   </li>
                   <li>
                     <Link
                       href={{
-                        pathname: '/single-services',
-                        query: getProduct('door', 'bi_folding_door'),
-                      }}>
-                      Bi-Folding Doors
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <hr />
-              <li className='has-sub'>
-                {/* <Link href="/blog">Conservatories</Link> */}
-                <h4>Conservatories</h4>
-                <ul>
-                  <li>
-                    <Link
-                      href={{
-                        pathname: '/single-services',
-                        query: getProduct('conservatory', 'upvc_conservatory'),
-                      }}>
-                      uPVC Conservatories
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={{
-                        pathname: '/single-services',
-                        query: getProduct('conservatory', 'edwardian_conservatory'),
-                      }}>
-                      Edwardian Conservatories
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={{
-                        pathname: '/single-services',
-                        query: getProduct('conservatory', 'victorian_conservatory'),
-                      }}>
-                      Victorian Conservatories
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={{
-                        pathname: '/single-services',
-                        query: getProduct('conservatory', 'p_shaped_conservatory'),
-                      }}>
-                      P-Shape Conservatories
+                        pathname: '/automatrix_Pages/Services/GeneratorSync',
+                      }}
+                    >
+                      Generator Synchronization & Automation
                     </Link>
                   </li>
                 </ul>
               </li>
 
               <hr />
-              <li>
-                <Link
-                  href={{
-                    pathname: '/single-services',
-                    query: getProduct('glazing', 'triple_glazing'),
-                  }}>
-                  Triple Glazing
+              {/* <li>
+                <Link href='/automatrix_Pages/Services/LatestNews'>
+                  Latest News
                 </Link>
-              </li>
-              <hr />
-              <li>
-                <Link
-                  href={{
-                    pathname: '/single-services',
-                    query: getProduct('schuco', 'schuco'),
-                  }}>
-                  Schüco
-                </Link>
-              </li>
-              <hr />
-              <li>
-                <Link href='/contact'>Latest News</Link>
-              </li>
+              </li> */}
               {/* <li className="has-sub">
                     <Link href="/shop">Shop</Link>
                     <ul>

@@ -1,13 +1,14 @@
-import React, { Component, Fragment } from "react";
-import emailjs from "emailjs-com";
-import validator from "validator";
-import { ContactDetailsBox } from "./ContactDetailsBox";
+import React, { Component, Fragment } from 'react';
 
-const EMAIL_USER_ID = "user_QfNO2qhhjvW2AVguZK0mu";
-const TEMPLATE_ID = "template_n1v9nss";
-const SERVICE_ID = "service_lkdmglh";
+import { ContactDetailsBox } from './ContactDetailsBox';
+import emailjs from 'emailjs-com';
+import validator from 'validator';
 
-class ContactForm2 extends Component {
+const serviceId = 'service_lbsghu8';
+const templateId = 'template_tab0cbu';
+const userId = 'TMRvf3Ap2vNY_wzZb';
+
+class ContactForm extends Component {
   render() {
     return (
       <Fragment>
@@ -93,7 +94,8 @@ class ContactForm2 extends Component {
                               onChange={this.handleChangeMessage}
                               rows='6'
                               className='form-control con-field'
-                              placeholder='Your Message'></textarea>
+                              placeholder='Your Message'
+                            ></textarea>
                             <span id='err' className='text-danger'>
                               {this.state.message_err}
                             </span>
@@ -132,17 +134,17 @@ class ContactForm2 extends Component {
   constructor() {
     super();
     this.state = {
-      email: "",
-      name: "",
-      phone: "",
-      subject: "",
-      message: "",
-      email_err: "",
-      phone_err: "",
-      name_err: "",
-      subject_err: "",
-      message_err: "",
-      return_msg: "",
+      email: '',
+      name: '',
+      phone: '',
+      subject: '',
+      message: '',
+      email_err: '',
+      phone_err: '',
+      name_err: '',
+      subject_err: '',
+      message_err: '',
+      return_msg: '',
       flag: false,
     };
     this.handleChangeEmail = this.handleChangeEmail.bind(this);
@@ -155,71 +157,77 @@ class ContactForm2 extends Component {
 
   handleChangeEmail(e) {
     this.setState({ email: e.target.value });
-    if (e.target.value === "") this.setState({ email_err: "Required Field" });
-    else this.setState({ email_err: "" });
+    if (e.target.value === '') this.setState({ email_err: 'Required Field' });
+    else this.setState({ email_err: '' });
   }
 
   handleChangeName(e) {
     this.setState({ name: e.target.value });
-    if (e.target.value === "") this.setState({ name_err: "Required Field" });
-    else this.setState({ name_err: "" });
+    if (e.target.value === '') this.setState({ name_err: 'Required Field' });
+    else this.setState({ name_err: '' });
   }
   handleChangePhone(e) {
-    console.log("validator -> ", validator.isMobilePhone(e.target.value));
+    console.log('validator -> ', validator.isMobilePhone(e.target.value));
     this.setState({ phone: e.target.value });
     // if (e.target.value === "") this.setState({ phone_err: "Required Field" });
     // else this.setState({ phone_err: "" });
-    if (e.target.value === "") {
-      this.setState({ phone_err: "Required Field" });
+    if (e.target.value === '') {
+      this.setState({ phone_err: 'Required Field' });
     } else if (validator.isMobilePhone(e.target.value)) {
-      this.setState({ phone_err: "" });
+      this.setState({ phone_err: '' });
     } else {
-      this.setState({ phone_err: "Not a valid phone number" });
+      this.setState({ phone_err: 'Not a valid phone number' });
       // console.log('not a valid phone')
     }
   }
   handleChangeSubject(e) {
     this.setState({ subject: e.target.value });
-    if (e.target.value === "") this.setState({ subject_err: "Required Field" });
-    else this.setState({ subject_err: "" });
+    if (e.target.value === '') this.setState({ subject_err: 'Required Field' });
+    else this.setState({ subject_err: '' });
 
     console.log(e.target.value);
   }
   handleChangeMessage(e) {
     this.setState({ message: e.target.value });
-    if (e.target.message === "") this.setState({ message_err: "Required Field" });
-    else this.setState({ message_err: "" });
+    if (e.target.message === '')
+      this.setState({ message_err: 'Required Field' });
+    else this.setState({ message_err: '' });
   }
 
   handleSubmit1() {
-    if (this.state.name === "") {
-      this.setState({ name_err: "Required Field" });
+    if (this.state.name === '') {
+      this.setState({ name_err: 'Required Field' });
       return;
     }
-    if (this.state.email === "") {
-      this.setState({ email_err: "Required Field" });
+    if (this.state.email === '') {
+      this.setState({ email_err: 'Required Field' });
       return;
     }
-    if (this.state.phone === "") {
-      this.setState({ phone_err: "Required Field" });
+    if (this.state.phone === '') {
+      this.setState({ phone_err: 'Required Field' });
       return;
     }
-    if (this.state.subject === "") {
-      this.setState({ subject_err: "Required Field" });
+    if (this.state.subject === '') {
+      this.setState({ subject_err: 'Required Field' });
       return;
     }
-    if (this.state.message === "") {
-      this.setState({ message_err: "Required Field" });
+    if (this.state.message === '') {
+      this.setState({ message_err: 'Required Field' });
       return;
     }
 
     var EmailReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (!EmailReg.test(this.state.email)) {
-      this.setState({ email_err: "Enter Valid Email" });
+      this.setState({ email_err: 'Enter Valid Email' });
       return;
     }
-    if (this.state.name === "" || this.state.email === "" || this.state.subject === "" || this.state.message === "") {
-      this.setState({ return_msg: "Fill All First", flag: false });
+    if (
+      this.state.name === '' ||
+      this.state.email === '' ||
+      this.state.subject === '' ||
+      this.state.message === ''
+    ) {
+      this.setState({ return_msg: 'Fill All First', flag: false });
     } else {
       const templateParams = {
         name: this.state.name,
@@ -228,15 +236,18 @@ class ContactForm2 extends Component {
         subject: this.state.subject,
         message: this.state.message,
       };
+      console.log('every thing is ok.');
 
       emailjs
-        .send(SERVICE_ID, TEMPLATE_ID, templateParams, EMAIL_USER_ID)
+        .send(serviceId, templateId, templateParams, {
+          publicKey: userId,
+        })
         .then(
           (response) => {
-            console.log("SUCCESS!", response.status, response.text);
+            console.log('SUCCESS!', response.status, response.text);
           },
           (err) => {
-            console.log("FAILED...", err);
+            console.log('FAILED...', err);
           }
         )
         .catch((err) => {
@@ -244,12 +255,12 @@ class ContactForm2 extends Component {
         })
         .finally(() => {
           this.setState({
-            email: "",
-            name: "",
-            phone: "",
-            subject: "",
-            message: "",
-            return_msg: "Success.",
+            email: '',
+            name: '',
+            phone: '',
+            subject: '',
+            message: '',
+            return_msg: 'Success.',
             flag: true,
           });
         });
@@ -257,4 +268,4 @@ class ContactForm2 extends Component {
   }
 }
 
-export default ContactForm2;
+export default ContactForm;

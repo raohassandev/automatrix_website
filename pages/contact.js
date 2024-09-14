@@ -1,11 +1,13 @@
 import React, { Component, Fragment } from "react";
-import LayoutOne from "../layouts/LayoutOne";
+
 import Breadcrumb from "../components/Breadcrumb";
-import ContactMap from "../components/ContactMap";
 import { CONTACT } from "../helpers/products";
+import { ContactDetailsBox } from "../components/ContactDetailsBox";
+import ContactFormCopy from "../components/ContactFormCopy";
+import ContactMap from "../components/ContactMap";
+import LayoutOne from "../layouts/LayoutOne";
 import emailjs from "emailjs-com";
 import validator from "validator";
-import { ContactDetailsBox } from "../components/ContactDetailsBox";
 
 const EMAIL_USER_ID = "user_QfNO2qhhjvW2AVguZK0mu";
 const TEMPLATE_ID = "template_n1v9nss";
@@ -15,111 +17,122 @@ class Contact extends Component {
   render() {
     return (
       <Fragment>
-        <LayoutOne pageTitle="Supreme-Windows-London">
-          <Breadcrumb bgImg={"/assets/images/call.png"} title="Contact Us" />
-
-          <div className="contact-page">
+        <LayoutOne pageTitle='Automatrix'>
+          <Breadcrumb bgImg={'/assets/images/call.png'} title='Contact Us' />
+         
+          <div className='contact-page'>
+            <ContactFormCopy />
+          </div>
+          <div className='contact-page'>
             {/*====================  Contact Form  area  ====================*/}
-            <section className="contact-section">
-              <div className="container">
-                <div className="base-header">
+            <section className='contact-section'>
+              <div className='container'>
+                <div className='base-header'>
                   <small>Get in touch</small>
                   <h3>Send Us Message</h3>
                 </div>
-                <div className="contact_wrp">
-                  <div className="row">
-                    <div className="col-sm-12 map-container">
+                <div className='contact_wrp'>
+                  <div className='row'>
+                    <div className='col-sm-12 map-container'>
                       {/* contact map */}
-                      <ContactMap latitude={CONTACT.location.latitude} longitude={CONTACT.location.longitude} />
+                      <ContactMap
+                        latitude={CONTACT.location.latitude}
+                        longitude={CONTACT.location.longitude}
+                      />
                     </div>
-                    <div className="col-md-8 col-sm-12 inner-contact">
-                      <div className="contact-form">
-                        <div id="message">
+                    <div className='col-md-8 col-sm-12 inner-contact'>
+                      <div className='contact-form'>
+                        <div id='message'>
                           {this.state.flag ? (
-                            <div className="alert alert-success">
+                            <div className='alert alert-success'>
                               <strong>{this.state.return_msg}</strong>
                             </div>
                           ) : null}
                         </div>
-                        <form method="post" name="contact-form" id="contact-form">
-                          <div className="row">
-                            <div className="col-lg-6 col-sm-12">
+                        <form
+                          method='post'
+                          name='contact-form'
+                          id='contact-form'
+                        >
+                          <div className='row'>
+                            <div className='col-lg-6 col-sm-12'>
                               <input
-                                type="text"
-                                id="name"
+                                type='text'
+                                id='name'
                                 value={this.state.name}
                                 onChange={this.handleChangeName}
-                                className="con-field form-control"
-                                placeholder="Name"
+                                className='con-field form-control'
+                                placeholder='Name'
                               />
-                              <span id="err" className="text-danger">
+                              <span id='err' className='text-danger'>
                                 {this.state.name_err}
                               </span>
                             </div>
                             {/** FIXME: configure phone nubmer */}
-                            <div className="col-lg-6 col-sm-12">
+                            <div className='col-lg-6 col-sm-12'>
                               <input
-                                type="text"
-                                className="con-field form-control"
+                                type='text'
+                                className='con-field form-control'
                                 value={this.state.phone}
                                 onChange={this.handleChangePhone}
-                                id="phone"
-                                placeholder="Phone"
+                                id='phone'
+                                placeholder='Phone'
                               />
-                              <span id="err" className="text-danger">
+                              <span id='err' className='text-danger'>
                                 {this.state.phone_err}
                               </span>
                             </div>
-                            <div className="col-lg-12 col-sm-12">
+                            <div className='col-lg-12 col-sm-12'>
                               <input
-                                type="text"
-                                className="con-field form-control"
+                                type='text'
+                                className='con-field form-control'
                                 value={this.state.email}
                                 onChange={this.handleChangeEmail}
-                                id="exampleInputEmail1"
-                                placeholder="Email"
+                                id='exampleInputEmail1'
+                                placeholder='Email'
                               />
-                              <span id="err" className="text-danger">
+                              <span id='err' className='text-danger'>
                                 {this.state.email_err}
                               </span>
 
                               <input
-                                type="text"
-                                id="subject"
+                                type='text'
+                                id='subject'
                                 value={this.state.subject}
                                 onChange={this.handleChangeSubject}
-                                className="form-control con-field"
-                                placeholder="Subject"
+                                className='form-control con-field'
+                                placeholder='Subject'
                               />
-                              <span id="err" className="text-danger">
+                              <span id='err' className='text-danger'>
                                 {this.state.subject_err}
                               </span>
                             </div>
                           </div>
-                          <div className="row">
-                            <div className="col-lg-12 col-sm-12">
+                          <div className='row'>
+                            <div className='col-lg-12 col-sm-12'>
                               <textarea
-                                name="comments"
-                                id="comments"
+                                name='comments'
+                                id='comments'
                                 value={this.state.message}
                                 onChange={this.handleChangeMessage}
-                                rows="6"
-                                className="form-control con-field"
-                                placeholder="Your Message"></textarea>
-                              <span id="err" className="text-danger">
+                                rows='6'
+                                className='form-control con-field'
+                                placeholder='Your Message'
+                              ></textarea>
+                              <span id='err' className='text-danger'>
                                 {this.state.message_err}
                               </span>
-                              <div className="submit-area">
+                              <div className='submit-area'>
                                 <input
-                                  type="button"
-                                  id="submit"
-                                  name="send"
+                                  type='button'
+                                  id='submit'
+                                  name='send'
                                   onClick={this.handleSubmit1}
                                   // onClick={()=> console.log('text')}
-                                  className="submit-contact submitBnt"
-                                  value="Send Message"
+                                  className='submit-contact submitBnt'
+                                  value='Send Message'
                                 />
-                                <div id="simple-msg"></div>
+                                <div id='simple-msg'></div>
                               </div>
                             </div>
                           </div>
@@ -129,7 +142,7 @@ class Contact extends Component {
 
                     {/*===  Contact Details  ===*/}
                     {ContactDetailsBox}
-                   
+
                     {/*===  end: Contact Details  ===*/}
                   </div>
                 </div>

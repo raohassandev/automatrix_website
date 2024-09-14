@@ -1,6 +1,6 @@
-import { CONTACT } from "../helpers/products";
-import Link from "next/link";
-import React from "react";
+import { CONTACT } from '../helpers/products';
+import Link from 'next/link';
+import React from 'react';
 
 const Header = () => {
   return (
@@ -33,23 +33,38 @@ const Header = () => {
             </li>
             <li>
               <a
-                href='https://www.facebook.com/Supreme-Windows-London-232011017739004/'
+                href='https://www.facebook.com/people/Automatrix-Engineering/61561500455442/'
                 target='_blank'
-                rel='noopener noreferrer'>
+                rel='noopener noreferrer'
+              >
                 <i className='fa fa-facebook'></i>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href='https://twitter.com/supremewindows3?s=20&t=nqP0fok-KCl6M5YoVoJO6Q'
                 target='_blank'
-                rel='noopener noreferrer'>
+                rel='noopener noreferrer'
+              >
                 <i className='fa fa-twitter'></i>
               </a>
             </li>
             <li>
-              <a href='https://www.instagram.com/supreme_windows_london_' target='_blank' rel='noopener noreferrer'>
+              <a
+                href='https://www.instagram.com/supreme_windows_london_'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <i className='fa fa-instagram'></i>
+              </a>
+            </li> */}
+            <li>
+              <a
+                href='https://www.linkedin.com/company/automatrix-engineering/?viewAsMember=true'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <i className='fa fa-linkedin'></i>
               </a>
             </li>
             {/* <li>

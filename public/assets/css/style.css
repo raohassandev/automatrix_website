@@ -514,12 +514,12 @@ section {
 .navigation .logo {
   float: left;
   position: relative;
-  height: 73px;
+  /* height: 73px; */
   margin-right: auto;
 }
 
 .navigation .logo img {
-  margin-top: 26px;
+  margin-top: 26stypx;
   max-width: inherit;
   cursor: pointer;
 }
@@ -849,7 +849,7 @@ section {
   }
 
   .navigation .logo img {
-    margin-top: 92px !important;
+    margin-top:68px !important;
   }
 
   .header_cart {
@@ -1265,7 +1265,7 @@ section {
 
 .slider_home .st-swiper-button-nav {
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   margin-top: -78px;
 }
 

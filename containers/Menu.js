@@ -21,11 +21,11 @@ const Menu = () => {
         <div className='container'>
           <div className='logo '>
             <Link href='/'>
-              <img src={logo} alt='' style={{ marginTop: 15 }} />
+              <img src={logo} alt=''  />
             </Link>
           </div>
 
-          <div className='meun_wrp'>
+          <div className='meun_wrp mt-1'>
             <Navbar expand='lg' sticky='top' id='navigation'>
               <Nav className='mr-auto'>
                 <ul>

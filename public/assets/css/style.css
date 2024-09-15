@@ -2772,7 +2772,7 @@ section {
   border-radius: 2px;
   color: white;
   position: relative;
-  margin: 8px 0 0 0; /* Added top margin */
+  margin: 8px 20 0 0; /* Added top margin */
   width: 40%; /* Set width to 80% of the container */
   -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;

@@ -19,13 +19,23 @@ class Contact extends Component {
       <Fragment>
         <LayoutOne pageTitle='Automatrix'>
           <Breadcrumb bgImg={'/assets/images/call.png'} title='Contact Us' />
-         
+
           <div className='contact-page'>
             <ContactFormCopy />
           </div>
           <div className='contact-page'>
+            <div className='contact_wrp'>
+              <div className='row'>
+                <div className='col-sm-12 map-container'>
+                  <ContactMap
+                    latitude={CONTACT.location.latitude}
+                    longitude={CONTACT.location.longitude}
+                  />
+                </div>
+              </div>
+            </div>
             {/*====================  Contact Form  area  ====================*/}
-            <section className='contact-section'>
+            {/* <section className='contact-section'>
               <div className='container'>
                 <div className='base-header'>
                   <small>Get in touch</small>
@@ -34,7 +44,7 @@ class Contact extends Component {
                 <div className='contact_wrp'>
                   <div className='row'>
                     <div className='col-sm-12 map-container'>
-                      {/* contact map */}
+                    
                       <ContactMap
                         latitude={CONTACT.location.latitude}
                         longitude={CONTACT.location.longitude}
@@ -68,7 +78,7 @@ class Contact extends Component {
                                 {this.state.name_err}
                               </span>
                             </div>
-                            {/** FIXME: configure phone nubmer */}
+                            
                             <div className='col-lg-6 col-sm-12'>
                               <input
                                 type='text'
@@ -140,14 +150,11 @@ class Contact extends Component {
                       </div>
                     </div>
 
-                    {/*===  Contact Details  ===*/}
                     {ContactDetailsBox}
-
-                    {/*===  end: Contact Details  ===*/}
                   </div>
                 </div>
               </div>
-            </section>
+            </section> */}
             {/*====================  End: Contact Form area  ====================*/}
           </div>
         </LayoutOne>

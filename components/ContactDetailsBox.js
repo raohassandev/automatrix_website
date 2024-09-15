@@ -2,7 +2,7 @@ import { CONTACT } from "../helpers/products";
 
 export const ContactDetailsBox = (
   <div className='col-md-12 col-sm-12 col-lg-4'>
-    <div className='contact_pg_address'>
+    <div className='contact_pg_address mt-4'>
       <h3>
         Hello there <br />
         got a project?

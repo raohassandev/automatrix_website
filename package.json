@@ -30,6 +30,7 @@
     "react-modal-video": "^1.2.6",
     "react-router-dom": "^5.2.0",
     "react-scroll": "^1.8.2",
+    "react-select": "^5.8.0",
     "react-slick": "^0.28.1",
     "react-tabs": "^3.2.2",
     "react-visibility-sensor": "^5.1.1",

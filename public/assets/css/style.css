@@ -2724,7 +2724,7 @@ section {
   height: 140px !important;
 }
 
-.submit-contact {
+/* .submit-contact {
   padding: 0;
   padding-right: 30px;
   padding-left: 30px;
@@ -2754,8 +2754,50 @@ section {
   font-size: 16px;
   font-weight: 500;
   border-radius: 2px;
+} */
+/* ================My Style================== */
+.submit-contact {
+  padding: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  display: inline-block;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  position: relative;
+  margin: 8px 0 0 0; /* Added top margin */
+  width: 40%; /* Set width to 80% of the container */
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  background: #9dca00;
+  font-size: 16px;
+  font-weight: 500;
 }
 
+/* Disabled state for loading */
+.submit-contact.loading {
+  background: #e0e0e0; /* Light gray background */
+  color: #a0a0a0; /* Gray text */
+  cursor: not-allowed; /* Show disabled cursor */
+}
+
+/* Optional: Ensure the button doesn't change color when in default state */
+.submit-contact.color-gray {
+  background: #f0f0f0; /* Light gray background */
+  color: #666; /* Darker gray text */
+}
+
+/* ================================== */
 .submit-contact:hover {
   background-color: #3b3f46;
   -webkit-transition: all .4s ease;

@@ -4,7 +4,10 @@ import { ContactDetailsBox } from './ContactDetailsBox';
 import emailjs from '@emailjs/browser';
 import validator from 'validator';
 
-const SERVICE_ID = 'service_lbsghu8';
+const G_MAIL_SERVICE_ID = 'service_lbsghu8---';///  israrulhaq5@gmail.com
+const STMP_SERVICE_ID = 'service_vgznfao';///webconnect@automatrix.pk
+
+const SERVICE_ID = STMP_SERVICE_ID;
 const TEMPLATE_ID = 'template_tab0cbu';
 const PUBLIC_KEY = 'TMRvf3Ap2vNY_wzZb';
 
@@ -13,7 +16,8 @@ const ContactFormCopy = () => {
 
   const [loading, setLoading] = useState(false); // State to track submission status
   const [formErrors, setFormErrors] = useState({});
-  const [successMessage, setSuccessMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState();
+  const [failedMessage, setFailedMessage] = useState();
 
   const validateForm = () => {
     const errors = {};
@@ -23,10 +27,7 @@ const ContactFormCopy = () => {
       errors.name = 'Name is required';
     }
 
-    if (
-      !formData.email.value ||
-      !validator.isEmail(formData.email.value)
-    ) {
+    if (!formData.email.value || !validator.isEmail(formData.email.value)) {
       errors.email = 'Valid email is required';
     }
 
@@ -50,7 +51,8 @@ const ContactFormCopy = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
+
+    setLoading(true);
     setFormErrors({});
     setSuccessMessage('');
 
@@ -79,15 +81,30 @@ const ContactFormCopy = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          setSuccessMessage(
+            'Your message has been sent. Thanks for contacting.'
+          ); // Clear form fields after successful submission
+          if (form.current) {
+            form.current.reset();
+          }
+          setLoading(false);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setFailedMessage(
+            'Message sending failed. kindly contact whatsapp or phone.'
+          );
+          setLoading(false);
         }
       )
       .finally(() => {
         setLoading(false); // Enable the send button again
-      });;
-  };;
+        setTimeout(() => {
+          setSuccessMessage(null);
+          setFailedMessage(null);
+        }, 5000);
+      });
+  };
 
   return (
     <Fragment>
@@ -104,14 +121,25 @@ const ContactFormCopy = () => {
                 <div className='col-md-12 col-sm-12  col-lg-8 inner-contact'>
                   <div className='contact-form  '>
                     <div id='message'>
-                      {/* {this.state.flag ? ( */}
-                      {true ? (
+                      {successMessage ? (
                         <div className='alert alert-success'>
-                          <strong>{'this.state.return_msg'}</strong>
+                          <strong>{successMessage}</strong>
+                        </div>
+                      ) : failedMessage ? (
+                        <div className='alert alert-danger'>
+                          <strong>{failedMessage}</strong>
                         </div>
                       ) : null}
                     </div>
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form
+                      ref={form}
+                      onSubmit={sendEmail}
+                      onChange={() => {
+                        setLoading(false);
+                        setSuccessMessage();
+                        setFailedMessage();
+                      }}
+                    >
                       <div className='row'>
                         <div className='col-lg-12 col-sm-12'>
                           <label>Name</label>
@@ -167,6 +195,44 @@ const ContactFormCopy = () => {
                               </span>
                             )}
                           </p>
+                          <label>Company Name</label>
+                          <input
+                            type='text'
+                            name='company'
+                            placeholder='Enter your company name'
+                            className={`con-field form-control ${
+                              formErrors.company ? 'is-invalid' : ''
+                            }`}
+                          />
+                          <p>
+                            {formErrors.company && (
+                              <span className='text-danger'>
+                                {formErrors.company}
+                              </span>
+                            )}
+                          </p>
+
+                          <label>City</label>
+                          <Select
+                            name='city'
+                            options={cityOptions}
+                            value={selectedCity}
+                            onChange={(selectedOption) =>
+                              setSelectedCity(selectedOption)
+                            }
+                            placeholder='Select a city'
+                            className={`con-field ${
+                              formErrors.city ? 'is-invalid' : ''
+                            }`}
+                          />
+                          <p>
+                            {formErrors.city && (
+                              <span className='text-danger'>
+                                {formErrors.city}
+                              </span>
+                            )}
+                          </p>
+
                           <label>Subject</label>
                           <input
                             type='text'
@@ -201,17 +267,21 @@ const ContactFormCopy = () => {
                           <input
                             type='submit'
                             value='Send'
-                            className='submit-contact submitBnt mt-2 w-100'
+                            className={
+                              loading
+                                ? 'submit-contact loading color-gray'
+                                : 'submit-contact '
+                            }
                             disabled={loading} // Disable button while loading
                           />
                         </div>
                       </div>
-                    </form>{' '}
-                    {successMessage && (
+                    </form>
+                    {/* {successMessage && (
                       <div className='alert alert-success mt-3'>
                         {successMessage}
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </div>
 

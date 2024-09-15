@@ -12,12 +12,6 @@ const Header = () => {
         <div className='header_top_right list-unstyled'>
           <ul>
             <li>
-              <a href={`tel:${CONTACT.phone}`}>
-                <i className='fa fa-phone'> </i>
-              </a>
-              {CONTACT.phone}
-            </li>
-            <li>
               <i className='fa fa-globe'></i>
               {CONTACT.address}
             </li>
@@ -26,9 +20,15 @@ const Header = () => {
         <div className='header_top_left'>
           <ul className='header_socil list-inline pull-left'>
             <li>
+              <a href={`tel:${CONTACT.phone}`}>
+                <i className='fa fa-phone'> </i>
+              </a>
+              {CONTACT.phone}
+            </li>
+            <li style={{color: 'white'}}>
               <a href={`mailto:${CONTACT.email}`}>
                 <i className='fa fa-envelope'></i>
-              </a>
+              </a>{' '}
               {CONTACT.email}
             </li>
             <li>

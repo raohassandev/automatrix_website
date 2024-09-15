@@ -5,18 +5,20 @@ import BlogList from '../components/BlogList';
 import ChooseUs from '../components/ChooseUs';
 import ClinetCarousel from '../components/ClinetCarousel';
 import Contact from './contact';
-import ContactForm2 from '../components/ContactForm';
+import ContactUsForm from '../components/ContactUsForm';
 import Funfact from '../components/Funfact';
 import GalleryContent from '../components/GalleryContent';
 import LayoutOne from '../layouts/LayoutOne';
 import PricingList from '../components/PricingList';
 import ProductsList from '../components/ProductsList';
-import PvController from './automatrix_Pages/Services/PvController';
+import PvController from './PvController';
 import ServiceContent from '../components/ServiceContent';
 import Slides from '../components/Slides';
 import Team from '../components/Team';
 import Testimonial from '../components/Testimonial';
 import WorkProcess from '../components/WorkProcess';
+
+// import ContactForm2 from '../components/ContactForm';
 
 // import ContactForm from '../components/ContactForm';
 
@@ -41,7 +43,7 @@ const Home = () => {
         {/* <BlogList />  */}
         {/* <ClinetCarousel /> */}
         {/* <ContactForm /> */}
-        <ContactForm2 />
+        <ContactUsForm />
       </LayoutOne>
     </Fragment>
   );

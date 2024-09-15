@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
-import Breadcrumb from '../../../components/Breadcrumb';
-import LayoutOne from '../../../layouts/LayoutOne';
+import Breadcrumb from '../components/Breadcrumb';
+import LayoutOne from '../layouts/LayoutOne';
 import { useRouter } from 'next/router';
 
 const LatestNews = () => {

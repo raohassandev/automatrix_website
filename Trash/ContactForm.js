@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import { ContactDetailsBox } from './ContactDetailsBox';
+import { ContactDetailsBox } from '../components/ContactDetailsBox';
 import emailjs from 'emailjs-com';
 import validator from 'validator';
 

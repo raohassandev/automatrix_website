@@ -1,42 +1,47 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
-import { CONTACT } from "../../helpers/products";
-import Link from "next/link";
-import { getProduct } from "../../helpers/getProduct";
+import { CONTACT } from '../../helpers/products';
+import Link from 'next/link';
+import { getProduct } from '../../helpers/getProduct';
 
 const MobileMenu = () => {
   useEffect(() => {
-    const offCanvasNav = document.querySelector("#offcanvas-navigation");
+    const offCanvasNav = document.querySelector('#offcanvas-navigation');
     const offCanvasNavSubMenu = offCanvasNav.querySelectorAll(`.subMenu`);
-    const anchorLinks = offCanvasNav.querySelectorAll("a");
+    const anchorLinks = offCanvasNav.querySelectorAll('a');
 
     for (let i = 0; i < offCanvasNavSubMenu.length; i++) {
-      offCanvasNavSubMenu[i].insertAdjacentHTML("beforebegin", `<span class="menuExpand"><i></i></span>`);
+      offCanvasNavSubMenu[i].insertAdjacentHTML(
+        'beforebegin',
+        `<span class="menuExpand"><i></i></span>`
+      );
     }
 
-    const menuExpand = offCanvasNav.querySelectorAll(".menuExpand");
+    const menuExpand = offCanvasNav.querySelectorAll('.menuExpand');
     const numMenuExpand = menuExpand.length;
 
     for (let i = 0; i < numMenuExpand; i++) {
-      menuExpand[i].addEventListener("click", (e) => {
+      menuExpand[i].addEventListener('click', (e) => {
         sideMenuExpand(e);
       });
     }
 
     for (let i = 0; i < anchorLinks.length; i++) {
-      anchorLinks[i].addEventListener("click", () => {
+      anchorLinks[i].addEventListener('click', () => {
         closeMobileMenu();
       });
     }
   });
 
   const sideMenuExpand = (e) => {
-    e.currentTarget.parentElement.classList.toggle("active");
+    e.currentTarget.parentElement.classList.toggle('active');
   };
 
   const closeMobileMenu = () => {
-    const offcanvasMobileMenu = document.querySelector("#offcanvas-mobile-menu");
-    offcanvasMobileMenu.classList.remove("active");
+    const offcanvasMobileMenu = document.querySelector(
+      '#offcanvas-mobile-menu'
+    );
+    offcanvasMobileMenu.classList.remove('active');
   };
 
   return (
@@ -101,7 +106,7 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: '/automatrix_Pages/Services/PvController',
+                        pathname: '/PvController',
                       }}
                     >
                       PV DG Synch Controller
@@ -110,7 +115,7 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: '/automatrix_Pages/Services/EnergyMonitoring',
+                        pathname: '/EnergyMonitoring',
                       }}
                     >
                       Energy Monitoring System
@@ -119,7 +124,7 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: '/automatrix_Pages/Services/ScadaSystem',
+                        pathname: '/ScadaSystem',
                       }}
                     >
                       SCADA System
@@ -128,7 +133,7 @@ const MobileMenu = () => {
                   <li>
                     <Link
                       href={{
-                        pathname: '/automatrix_Pages/Services/GeneratorSync',
+                        pathname: '/GeneratorSync',
                       }}
                     >
                       Generator Synchronization & Automation
@@ -139,7 +144,7 @@ const MobileMenu = () => {
 
               <hr />
               {/* <li>
-                <Link href='/automatrix_Pages/Services/LatestNews'>
+                <Link href='/Services/LatestNews'>
                   Latest News
                 </Link>
               </li> */}

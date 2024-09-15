@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
-import Breadcrumb from '../../../components/Breadcrumb';
-import LayoutOne from '../../../layouts/LayoutOne';
+import Breadcrumb from '../components/Breadcrumb';
+import LayoutOne from '../layouts/LayoutOne';
 import { useRouter } from 'next/router';
 
 const PvController = () => {
@@ -25,7 +25,7 @@ const PvController = () => {
                     {/* {serviceBottomtMap} */}
                   </div>
                   <h4 className='title'>PV DG Synch Controller</h4>
-                  <p className='h5'>
+                  <p className='h5 indent4'>
                     Our PV DG Controller is a state-of-the-art solution designed
                     to optimize the integration and management of power
                     generation from solar photovoltaic (PV) systems and diesel
@@ -34,9 +34,9 @@ const PvController = () => {
                     generator supply, and solar inverters. Here’s an expanded
                     overview highlighting its optional features and benefits:
                   </p>
-                  <h6 className='title'>Real-time Monitoring and Reporting:</h6>
 
-                  <p>
+                  <h6 className='title'>Real-time Monitoring and Reporting:</h6>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Grid Supply Monitoring:{' '}
                     </strong>
@@ -44,15 +44,14 @@ const PvController = () => {
                     parameters from the grid, ensuring real-time visibility into
                     grid availability and quality.
                   </p>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Generator Supply Monitoring:{' '}
                     </strong>
                     Tracks generator output to ensure reliable backup power and
                     efficient utilization.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Solar Inverter Monitoring:{' '}
                     </strong>
@@ -62,7 +61,7 @@ const PvController = () => {
                     production.
                   </p>
                   <h6 className='title'>Control and Optimization:</h6>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Power Production Control:{' '}
                     </strong>
@@ -70,8 +69,7 @@ const PvController = () => {
                     parameters for grid and generator operations, optimizing
                     energy usage and cost savings.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Prevention of Reverse Power:{' '}
                     </strong>
@@ -79,8 +77,7 @@ const PvController = () => {
                     experiencing reverse power conditions, enhancing operational
                     safety and efficiency.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Zero Export Limitation:{' '}
                     </strong>
@@ -88,10 +85,8 @@ const PvController = () => {
                     export to the grid, aligning with regulatory requirements
                     and maximizing self-consumption.
                   </p>
-
                   <h6 className='title'>Optional Features:</h6>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       LAN and Remote Monitoring:{' '}
                     </strong>
@@ -100,16 +95,14 @@ const PvController = () => {
                     anywhere, ensuring proactive maintenance and
                     troubleshooting.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>Custom Integration: </strong>
                     upports custom integration capabilities for specific user
                     requirements, such as overloading shunt management and
                     automatic operation of auxiliary systems based on predefined
                     conditions.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Auxiliary Operation Control:{' '}
                     </strong>
@@ -117,24 +110,20 @@ const PvController = () => {
                     criteria, optimizing overall system efficiency and reducing
                     operational complexity.
                   </p>
-
                   <h6 className='title'>Benefits:</h6>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>Enhanced Efficiency: </strong>
                     Integrates and optimizes multiple power sources to improve
                     overall operational efficiency and reliability of power
                     supply.
                   </p>
-
-                  <p>
-                    <strong className='subTitle'>Cost Savings: </strong>Reduces
-                    fuel consumption by optimizing the use of solar energy and
-                    diesel generators based on real-time demand and grid
-                    conditions.
+                  <p className='indent4'>
+                    <strong className='subTitle'>Cost Savings: </strong>
+                    Reduces fuel consumption by optimizing the use of solar
+                    energy and diesel generators based on real-time demand and
+                    grid conditions.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Compliance and Safety:{' '}
                     </strong>
@@ -142,8 +131,7 @@ const PvController = () => {
                     grid interaction and power export limitations, enhancing
                     system safety and reliability.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Remote Monitoring and Management:{' '}
                     </strong>
@@ -151,10 +139,8 @@ const PvController = () => {
                     facilitating proactive system maintenance and minimizing
                     downtime.
                   </p>
-
                   <h6 className='title'>Application:</h6>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Commercial and Industrial Facilities:
                     </strong>
@@ -162,16 +148,14 @@ const PvController = () => {
                     enhance energy resilience through optimized power
                     management.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Remote and Off-grid Installations:{' '}
                     </strong>
                     Suitable for off-grid or remote locations where reliable
                     power supply from solar and generator sources is critical.
                   </p>
-
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Utility-Scale Solar Installations:{' '}
                     </strong>
@@ -180,7 +164,7 @@ const PvController = () => {
                     interaction and power management.
                   </p>
                   <h6 className='title'>Conclusion:</h6>
-                  <p>
+                  <p className='indent4'>
                     Our PV DG Controller represents a significant advancement in
                     energy management technology, offering comprehensive
                     monitoring, control, and customization options to maximize
@@ -194,7 +178,6 @@ const PvController = () => {
                     operational efficiency according to specific needs and
                     regulatory requirements.
                   </p>
-
                 </div>
 
                 {/* <div className='col-md-4 col-sm-12'>

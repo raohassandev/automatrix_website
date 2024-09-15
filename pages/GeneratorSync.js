@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
-import Breadcrumb from '../../../components/Breadcrumb';
-import LayoutOne from '../../../layouts/LayoutOne';
+import Breadcrumb from '../components/Breadcrumb';
+import LayoutOne from '../layouts/LayoutOne';
 import { useRouter } from 'next/router';
 
 const GeneratorSync = () => {
@@ -30,7 +30,7 @@ const GeneratorSync = () => {
                   <h4 className='title'>
                     Generator Synchronization & Automation
                   </h4>
-                  <p>
+                  <p className='indent4'>
                     Automatrix provides industry-leading Generator
                     Synchronization solutions for both generator-to-generator
                     synchronization and generator-to-grid applications. Our
@@ -46,7 +46,7 @@ const GeneratorSync = () => {
                   <h6 className='title'>
                     Generator-to-Generator Synchronization
                   </h6>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Generator-to-Generator Synchronization: {'  '}
                     </strong>
@@ -57,7 +57,7 @@ const GeneratorSync = () => {
                   <h6 className='title'>
                     Generator-to-Generator Synchronization
                   </h6>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Synchronization Across Multiple Units: {'  '}
                     </strong>
@@ -68,19 +68,19 @@ const GeneratorSync = () => {
                   <h6 className='title'>
                     Phase Matching and Frequency Adjustment:{' '}
                   </h6>
-                  <p>
+                  <p className='indent4'>
                     Continuously monitors and adjusts the voltage, frequency,
                     and phase of generators to ensure they operate in perfect
                     harmony.
                   </p>
                   <h6 className='title'>Generator-to-Grid Synchronization</h6>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>Grid Integration: </strong>
                     nables seamless connection of on-site generators to the
                     utility grid, allowing for the export of surplus power or
                     supporting the grid during peak demand.
                   </p>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Reverse and Forward Synchronization:{' '}
                     </strong>
@@ -89,7 +89,7 @@ const GeneratorSync = () => {
                     the grid) with precision, ensuring safe and reliable
                     transitions.
                   </p>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Automatic Voltage Regulation:{' '}
                     </strong>
@@ -97,7 +97,7 @@ const GeneratorSync = () => {
                     the grid for consistent power quality.
                   </p>
                   <h6 className='title'>Real-Time Monitoring and Control</h6>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Dynamic Parameter Monitoring:{' '}
                     </strong>
@@ -105,7 +105,7 @@ const GeneratorSync = () => {
                     parameters such as voltage, frequency, and phase angle to
                     ensure synchronization is maintained at all times.
                   </p>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Remote Control and Configuration:{' '}
                     </strong>
@@ -114,7 +114,7 @@ const GeneratorSync = () => {
                     managing power generation.
                   </p>
                   <h6 className='title'>Advanced Protection and Alarms</h6>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Fault Detection: {'  '}
                     </strong>
@@ -122,7 +122,7 @@ const GeneratorSync = () => {
                     over-voltage, under-frequency, or phase mismatch, ensuring
                     that generators are protected from damage.
                   </p>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>Alarm System: </strong>
                     Real-time alarms and notifications for any irregularities
                     during synchronization, allowing immediate corrective
@@ -131,14 +131,14 @@ const GeneratorSync = () => {
                   <h6 className='title'>
                     Automated Transition between Power Sources
                   </h6>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Smooth Transfer Between Grid and Generator Power:{' '}
                     </strong>
                     Automated processes ensure smooth switching between grid and
                     generator power in response to changes in demand or outages.
                   </p>
-                  <p>
+                  <p className='indent4'>
                     <strong className='subTitle'>
                       Parallel Operation: {'  '}
                     </strong>
@@ -148,53 +148,53 @@ const GeneratorSync = () => {
                   </p>
                   <h4 className='title'>Benefits</h4>
                   <h6 className='title'>Uninterrupted Power Supply</h6>
-                  <p>
+                  <p className='indent4'>
                     By synchronizing multiple generators or integrating them
                     with the grid, the system ensures a continuous power supply,
                     preventing costly interruptions during critical operations.
                   </p>
                   <h6 className='title'>Increased Operational Efficiency</h6>
-                  <p>
+                  <p className='indent4'>
                     With automated load sharing and synchronization, the system
                     optimizes the performance of generators, reducing fuel
                     consumption and maximizing the lifespan of equipment.
                   </p>
                   <h6 className='title'>Flexible Power Management </h6>
-                  <p>
+                  <p className='indent4'>
                     Flexible Power Management The ability to operate generators
                     in parallel with the grid or other units provides
                     flexibility in power management, allowing facilities to
                     adjust power generation according to real-time demand.
                   </p>
                   <h6 className='title'>Enhanced System Protection</h6>
-                  <p>
+                  <p className='indent4'>
                     Advanced fault detection and alarm systems protect
                     generators and the grid from potential damage due to
                     mismatches in voltage, frequency, or phase, ensuring the
                     long-term reliability of the power system.
                   </p>
                   <h6 className='title'>Cost Savings </h6>
-                  <p>
+                  <p className='indent4'>
                     Efficient synchronization reduces fuel consumption, wear and
                     tear on generators, and the need for manual intervention,
                     leading to significant cost savings over time.
                   </p>
                   <h4 className='title'>Ease of Monitoring and Control </h4>
                   <h6 className='title'>User-Friendly Interface</h6>
-                  <p>
+                  <p className='indent4'>
                     The system provides an intuitive interface for real-time
                     monitoring and control, allowing operators to easily manage
                     synchronization settings and track performance data.
                   </p>
                   <h6 className='title'>Remote Accessibility</h6>
-                  <p>
+                  <p className='indent4'>
                     Secure remote access ensures that operators can monitor and
                     control synchronization from any location, providing greater
                     flexibility and the ability to respond to issues in
                     real-time.
                   </p>
                   <h6 className='title'>Automated Processes</h6>
-                  <p>
+                  <p className='indent4'>
                     Automated synchronization and load-sharing reduce the need
                     for manual adjustments, allowing the system to operate
                     efficiently with minimal human intervention.
@@ -202,7 +202,7 @@ const GeneratorSync = () => {
                   <h6 className='title'>
                     Seamless Integration with Existing Systems
                   </h6>
-                  <p>
+                  <p className='indent4'>
                     The synchronization system is designed to integrate
                     seamlessly with existing industrial control setups, ensuring
                     compatibility with a wide range of power management and
@@ -211,7 +211,7 @@ const GeneratorSync = () => {
                   <h4 className='title'>
                     Tailored for Industrial and Utility Applications
                   </h4>
-                  <p>
+                  <p className='indent4'>
                     Automatrix’s Generator Synchronization solutions are
                     designed to meet the needs of industrial powerhouses,
                     utility grids, and critical infrastructure. Whether
@@ -224,7 +224,7 @@ const GeneratorSync = () => {
                     Ensure Continuous Power with Our Advanced Synchronization
                     Solutions
                   </h4>
-                  <p>
+                  <p className='indent4'>
                     Contact Automatrix today to learn more about how our
                     Generator Synchronization systems can be customized to meet
                     your facility’s unique power management needs. Our expert

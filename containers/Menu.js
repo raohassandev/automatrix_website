@@ -35,7 +35,7 @@ const Menu = () => {
                   <li className='has-sub'>
                     <Link
                       href={{
-                        pathname: '/automatrix_Pages/Services/Services',
+                        pathname: '/Services',
                       }}
                     >
                       Services
@@ -45,7 +45,7 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: '/automatrix_Pages/Services/PvController',
+                            pathname: '/PvController',
                           }}
                         >
                           PV DG Synch Controller
@@ -54,8 +54,7 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname:
-                              '/automatrix_Pages/Services/EnergyMonitoring',
+                            pathname: '/EnergyMonitoring',
                           }}
                         >
                           Energy Monitoring System
@@ -64,7 +63,7 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname: '/automatrix_Pages/Services/ScadaSystem',
+                            pathname: '/ScadaSystem',
                           }}
                         >
                           SCADA System
@@ -73,8 +72,7 @@ const Menu = () => {
                       <li>
                         <Link
                           href={{
-                            pathname:
-                              '/automatrix_Pages/Services/GeneratorSync',
+                            pathname: '/GeneratorSync',
                           }}
                         >
                           Generator Synchronization & Automation
@@ -85,7 +83,7 @@ const Menu = () => {
                   {/* <li>
                     <Link
                       href={{
-                        pathname: '/automatrix_Pages/Services/PvController',
+                        pathname: '/PvController',
                       }}
                     >
                       Solar EPC
@@ -97,16 +95,14 @@ const Menu = () => {
                     </Link>
                   </li>
                   {/* <li>
-                    <Link href='/automatrix_Pages/Services/LatestNews'>
+                    <Link href='/Services/LatestNews'>
                       Latest News
                     </Link>
                   </li> */}
                   <li>
                     <Link href='/contact'>Contact</Link>
                   </li>
-                  <li>
-                    <Link href='/ContactUsForm'>Contact</Link>
-                  </li>
+
                   <li>
                     <Link href='/about'>About Us</Link>
                   </li>

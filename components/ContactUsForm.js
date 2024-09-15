@@ -21,7 +21,7 @@ const cityOptions = [
   // Add more cities as needed
 ];
 
-const ContactFormCopy = () => {
+const ContactUsForm = () => {
   const form = useRef();
 
   const [loading, setLoading] = useState(false);
@@ -312,4 +312,4 @@ const ContactFormCopy = () => {
   );
 };
 
-export default ContactFormCopy;
+export default ContactUsForm;

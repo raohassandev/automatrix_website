@@ -17,7 +17,7 @@ const Menu = () => {
       <div className='navigation'>
         <div className='container'>
           <div className='logo '>
-            <Link href='/home'>
+            <Link href='/'>
               <img src={logo} alt='' />
             </Link>
           </div>
@@ -27,7 +27,7 @@ const Menu = () => {
               <Nav className='mr-auto'>
                 <ul>
                   <li className='active'>
-                    <Link href='/home'>Home </Link>
+                    <Link href='/'>Home </Link>
                   </li>
                   <li className='has-sub'>
                     <Link

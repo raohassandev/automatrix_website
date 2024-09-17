@@ -95,7 +95,7 @@ const MobileMenu = () => {
             </ul> */}
             <ul>
               <li className='active'>
-                <Link href='/home'>
+                <Link href='/'>
                   <h5 className='title'>Home</h5>
                 </Link>
               </li>

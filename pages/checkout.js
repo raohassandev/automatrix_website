@@ -173,7 +173,7 @@ const AboutPg = () => {
                                           </label>
                                         </p>
                                         <p className='lost_pass'>
-                                          <a href='/home'>Lost your password?</a>
+                                          <a href='/'>Lost your password?</a>
                                         </p>
                                       </form>
                                     </div>

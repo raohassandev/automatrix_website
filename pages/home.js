@@ -9,9 +9,8 @@ export const Home = () => {
   const bgImg = 'assets/images/amx_home_black.png';
   return (
     <Fragment>
-      <LayoutOne>
+      <LayoutOne >
         <Breadcrumb bgImg={bgImg} title={''} />
-
         <div className='single-services-page'>
           {/*====================  Single Services area ====================*/}
           <div className='single_service'>

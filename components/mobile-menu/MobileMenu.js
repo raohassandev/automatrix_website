@@ -60,7 +60,6 @@ const MobileMenu = () => {
               <li>
                 <Link href="/">Home</Link>
               </li>
-
               <li className="menuItemHasChildren">
                 <Link href="#/">Pages</Link>
                 <ul className="subMenu">
@@ -72,7 +71,6 @@ const MobileMenu = () => {
                   <li><Link href="/team">Team</Link></li>
                 </ul>
               </li>
-
               <li className="menuItemHasChildren">
                 <Link href="/blog">Blog</Link>
                 <ul className="subMenu">
@@ -97,11 +95,19 @@ const MobileMenu = () => {
             </ul> */}
             <ul>
               <li className='active'>
-                <Link href='/home'>Home </Link>
+                <Link href='/home'>
+                  <h5 className='title'>Home</h5>
+                </Link>
               </li>
               <li className='has-sub'>
-                <h4>Services</h4>
-                <ul>
+                <Link
+                  href={{
+                    pathname: '/Services',
+                  }}
+                >
+                  <h5 className='title'>Services</h5>
+                </Link>
+                <ul className='ml-3 h6'>
                   <li>
                     <Link
                       href={{
@@ -111,6 +117,7 @@ const MobileMenu = () => {
                       PV DG Synch Controller
                     </Link>
                   </li>
+                  <hr />
                   <li>
                     <Link
                       href={{
@@ -120,6 +127,7 @@ const MobileMenu = () => {
                       Energy Monitoring System
                     </Link>
                   </li>
+                  <hr/>
                   <li>
                     <Link
                       href={{
@@ -129,6 +137,7 @@ const MobileMenu = () => {
                       SCADA System
                     </Link>
                   </li>
+                  <hr/>
                   <li>
                     <Link
                       href={{
@@ -167,11 +176,15 @@ const MobileMenu = () => {
 
               <hr />
               <li>
-                <Link href='/contact'>Contact</Link>
+                <Link href='/contact'>
+                  <h5 className='title'>Contact</h5>
+                </Link>
               </li>
               <hr />
               <li>
-                <Link href='/about'>About Us</Link>
+                <Link href='/about'>
+                  <h5 className='title'>About Us</h5>
+                </Link>
               </li>
               <hr />
             </ul>
@@ -191,16 +204,16 @@ const MobileMenu = () => {
             <ul>
               <li>
                 <a className='fa ' href={`tel:${CONTACT.phone}`}>
-                  <i className='fa fa-phone'>{CONTACT.phone}</i>
+                  <i className='fa fa-phone'>{'  ' + CONTACT.phone}</i>
                 </a>
               </li>
               <li>
                 <a className='fa ' href={`mailto:${CONTACT.email}`}>
-                  <i className='fa fa-envelope'> {' ' + CONTACT.email}</i>
+                  <i className='fa fa-envelope'> {'  ' + CONTACT.email}</i>
                 </a>
               </li>
               <li>
-                <i className='fa fa-globe'>{' ' + CONTACT.address}</i>
+                <i className='fa fa-globe'>{'  ' + CONTACT.address}</i>
               </li>
             </ul>
           </div>
@@ -211,15 +224,11 @@ const MobileMenu = () => {
               <li>
                 <a href='#/' className='fa fa-facebook'></a>
               </li>
-              <li>
-                <a href='#/' className='fa fa-twitter'></a>
-              </li>
+              <li>{/* <a href='#/' className='fa fa-twitter'></a> */}</li>
               <li>
                 <a href='#/' className='fa fa-linkedin'></a>
               </li>
-              <li>
-                <a href='#/' className='fa fa-google-plus'></a>
-              </li>
+              <li>{/* <a href='#/' className='fa fa-google-plus'></a> */}</li>
             </ul>
           </div>
         </div>

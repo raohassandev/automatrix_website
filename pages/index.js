@@ -29,8 +29,9 @@ const Home = () => {
       <LayoutOne pageTitle='Automatrix'>
        
         <Slides />
-        <AboutContent />
-        <ServiceContent /> 
+        <HomePage/>
+        {/* <AboutContent /> */}
+        {/* <ServiceContent />  */}
         /** */
         {/* <PV_Controller /> */}
         /** */

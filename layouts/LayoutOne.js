@@ -1,9 +1,10 @@
-import React, { Fragment } from "react";   
- import Header from "../containers/Header";
-import Menu from "../containers/Menu";
-import Footer from "../containers/Footer"; 
+import React, { Fragment } from "react";
+
+import Footer from "../containers/Footer";
 import Head from 'next/head';
-   
+import Header from "../containers/Header";
+import Menu from "../containers/Menu";
+
 const LayoutOne = (props ) => {
   return (
     <Fragment>

@@ -6,11 +6,11 @@ import { useRouter } from 'next/router';
 
 const PvController = () => {
   // const bgImg='../assets/images/header.jpg'
-  const bgImg = 'assets/images/conservatories-tab.jpeg';
+  const bgImg = 'assets/images/amx/5.png';
   return (
     <Fragment>
       <LayoutOne>
-        <Breadcrumb bgImg={bgImg} title={'PV DG Synch Controller'} />
+        <Breadcrumb bgImg={bgImg} title={''} />
 
         <div className='single-services-page'>
           {/*====================  Single Services area ====================*/}

@@ -7,8 +7,6 @@ import React from 'react';
 import { getProduct } from '../helpers/getProduct';
 
 const Menu = () => {
-  // console.log('PRODUCTS', PRODUCTS)
-
   const triggerSearch = () => {
     const offcanvasMobileMenu = document.querySelector('.search_icon_inr');
     offcanvasMobileMenu.classList.toggle('active');
@@ -16,12 +14,11 @@ const Menu = () => {
   const logo = 'assets/images/Automatrix_Logo_2.jpeg';
   return (
     <div className='menu_area'>
-      {/* Start: header navigation */}
       <div className='navigation'>
         <div className='container'>
           <div className='logo '>
-            <Link href='/'>
-              <img src={logo} alt=''  />
+            <Link href='/home'>
+              <img src={logo} alt='' />
             </Link>
           </div>
 
@@ -30,7 +27,7 @@ const Menu = () => {
               <Nav className='mr-auto'>
                 <ul>
                   <li className='active'>
-                    <Link href='/'>Home </Link>
+                    <Link href='/home'>Home </Link>
                   </li>
                   <li className='has-sub'>
                     <Link
@@ -91,7 +88,7 @@ const Menu = () => {
                   </li>*/}
                   <li>
                     <Link href='https://www.refrens.com/automatrix-engineering'>
-                      Profile
+                      Projects
                     </Link>
                   </li>
                   {/* <li>

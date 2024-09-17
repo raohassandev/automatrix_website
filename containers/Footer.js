@@ -118,24 +118,24 @@ const Footer = () => {
                 <div className='widget quick_lnk'>
                   <ul>
                     <li>
-                      <Link href='/maintenance'>
+                      <Link href='#'>
                         Maintenance / Tips / FAQ's
                       </Link>
                     </li>
                     <li>
-                      <Link href='/about'>About Us</Link>
+                      <Link href='#t'>About Us</Link>
                     </li>
                     <li>
-                      <Link href='/cookies'>Cookies & Privacy Policy</Link>
+                      <Link href='#'>Cookies & Privacy Policy</Link>
                     </li>
                     {/* <li>
                       <Link href="/about">Valid HTML5</Link>
                     </li> */}
-                    <li>
+                    {/* <li>
                       <Link href='http://www.adtrak.co.uk/'>
                         Web Design by Adtrak
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

@@ -107,7 +107,7 @@ const SingleService = () => {
   return (
     <Fragment>
       <LayoutOne>
-        <Breadcrumb bgImg={bgImg} title={'Service Title'} />
+        <Breadcrumb bgImg={bgImg} title={''} />
 
         <div className='single-services-page'>
           {/*====================  Single Services area ====================*/}

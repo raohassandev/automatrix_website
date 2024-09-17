@@ -10,7 +10,7 @@ const LatestNews = () => {
   return (
     <Fragment>
       <LayoutOne>
-        <Breadcrumb bgImg={bgImg} title={'Latest News'} />
+        <Breadcrumb bgImg={bgImg} title={''} />
 
         <div className='single-services-page'>
           {/*====================  Single Services area ====================*/}

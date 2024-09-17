@@ -6,11 +6,11 @@ import { useRouter } from 'next/router';
 
 export const Services = () => {
   // const bgImg='../assets/images/header.jpg'
-  const bgImg = 'assets/images/conservatories-tab.jpeg';
+  const bgImg = 'assets/images/amx/2.png';
   return (
     <Fragment>
       <LayoutOne>
-        <Breadcrumb bgImg={bgImg} title={'Offered Services'} />
+        <Breadcrumb bgImg={bgImg} title={''} />
 
         <div className='single-services-page'>
           {/*====================  Single Services area ====================*/}

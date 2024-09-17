@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 
 import { CONTACT } from '../../helpers/products';
 import Link from 'next/link';
-import { getProduct } from '../../helpers/getProduct';
 
 const MobileMenu = () => {
   useEffect(() => {
@@ -98,7 +97,7 @@ const MobileMenu = () => {
             </ul> */}
             <ul>
               <li className='active'>
-                <Link href='/'>Home </Link>
+                <Link href='/home'>Home </Link>
               </li>
               <li className='has-sub'>
                 <h4>Services</h4>

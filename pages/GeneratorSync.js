@@ -6,13 +6,13 @@ import { useRouter } from 'next/router';
 
 const GeneratorSync = () => {
   // const bgImg='../assets/images/header.jpg'
-  const bgImg = 'assets/images/conservatories-tab.jpeg';
+  const bgImg = 'assets/images/amx/4.png';
   return (
     <Fragment>
       <LayoutOne>
         <Breadcrumb
           bgImg={bgImg}
-          title={'Generator Synchronization & Automation'}
+          title={''}
         />
 
         <div className='single-services-page'>

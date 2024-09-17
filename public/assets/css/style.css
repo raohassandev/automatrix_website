@@ -505,6 +505,8 @@ section {
   top: 0px;
   z-index: 9999;
   box-shadow: 0 3px 6px rgba(54, 54, 54, 0.01);
+  
+  
 }
 
 .menu_area .container {
@@ -3115,14 +3117,26 @@ header.blog-banner {
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+  object-fit: cover;
+
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat;
+ 
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint for your mobile view */
+  .blog-banner {
+    height: 300px; /* Adjust the height for mobile screens */
+  }
 }
 
 header {
   position: relative;
   text-align: center;
   color: #fff;
-  background-color: rgba(198, 227, 221, 0.39);
+  background-color:  rgba(34, 201, 22, 0.39);
   height: 700px;
+  
 }
 
 .blog-header {

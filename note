@@ -5,3 +5,7 @@ replace: "./_next/static/
 
 https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported/69699772#69699772
 
+
+
+Anothr way of broken link solution.
+Upload the build zip to cpanel & extract on the root folder. add extention .html in pages name.

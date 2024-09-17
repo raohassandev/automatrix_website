@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from "react";
-import LayoutOne from "../layouts/LayoutOne";
+
 import Breadcrumb from "../components/Breadcrumb";
+import LayoutOne from "../layouts/LayoutOne";
 import ServiceSidebar from "../components/ServiceSidebar";
-import { useRouter } from "next/router";
 import { getBottomArray } from "../helpers/getProduct";
+import { useRouter } from "next/router";
 import windowsBottomArray from "../components/windowsBottomArray";
 
 const data = {
@@ -56,7 +57,7 @@ const windows = () => {
         <Breadcrumb
           // bgImg={('/assets/images/header.jpg')}
           bgImg={`assets/images/${data.bgImage}`}
-          title={name}
+          title={"name"}
         />
 
         <div className="single-services-page">

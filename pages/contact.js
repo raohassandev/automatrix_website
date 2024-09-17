@@ -18,7 +18,7 @@ class Contact extends Component {
     return (
       <Fragment>
         <LayoutOne pageTitle='Automatrix'>
-          <Breadcrumb bgImg={'/assets/images/call.png'} title='Contact Us' />
+          <Breadcrumb bgImg={'/assets/images/amx/6.png'} title='' />
 
           <div className='contact-page'>
             <ContactUsForm />

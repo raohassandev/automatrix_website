@@ -8,6 +8,7 @@ import Contact from './contact';
 import ContactUsForm from '../components/ContactUsForm';
 import Funfact from '../components/Funfact';
 import GalleryContent from '../components/GalleryContent';
+import HomePage from "../pages/home";
 import LayoutOne from '../layouts/LayoutOne';
 import PricingList from '../components/PricingList';
 import ProductsList from '../components/ProductsList';
@@ -26,9 +27,10 @@ const Home = () => {
   return (
     <Fragment>
       <LayoutOne pageTitle='Automatrix'>
+       
         <Slides />
         <AboutContent />
-        <ServiceContent />
+        <ServiceContent /> 
         /** */
         {/* <PV_Controller /> */}
         /** */

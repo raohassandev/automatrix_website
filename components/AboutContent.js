@@ -6,11 +6,11 @@ const AboutContent = () => {
       <div className='container'>
         <div className='row'>
           {/* <div className='col-md-6 col-sm-12'> */}
-          <div>
+          {/* <div>
             <div className='about_img'>
               <img src='assets/images/about-us-sidebar.jpeg' alt='about' />
             </div>
-          </div>
+          </div> */}
           {/* <div className='col-md-6 col-sm-12'> */}
           <div>
             <div className='about_item_tb'>

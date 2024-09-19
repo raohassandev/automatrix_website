@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
 import Breadcrumb from '../components/Breadcrumb';
+import Carousel from '../components/Carousel';
 import LayoutOne from '../layouts/LayoutOne';
 import { useRouter } from 'next/router';
 
@@ -11,6 +12,8 @@ export const Home = () => {
     <Fragment>
       {/* <LayoutOne > */}
         {/* <Breadcrumb bgImg={bgImg} title={''} /> */}
+
+        <Carousel/>
         <div className='single-services-page'>
           {/*====================  Single Services area ====================*/}
           <div className='single_service'>

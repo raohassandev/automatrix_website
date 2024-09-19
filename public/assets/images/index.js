@@ -35,7 +35,7 @@ export const amxImages = {
   synch: '4.png',
   pv_dg:'5.png',
   contact: '6.png',
-  logo_small: '7.png',
-  logo_white_bg:'logo1.png',
+  // logo_small: '7.png',
+  // logo_white_bg:'logo1.png',
   
 }

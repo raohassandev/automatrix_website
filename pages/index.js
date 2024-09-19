@@ -28,7 +28,7 @@ const Home = () => {
     <Fragment>
       <LayoutOne pageTitle='Automatrix'>
        
-        <Slides />
+        {/* <Slides /> */}
         <HomePage/>
         {/* <AboutContent /> */}
         {/* <ServiceContent />  */}

@@ -172,9 +172,12 @@ const Footer = () => {
           <div>
             <a
               href={`https://wa.me/923111646640`}
-              className='fa fa-whatsapp'
+              // className='fa fa-whatsapp'
             ></a>
-            <i className='fa fa-whatsapp mr-2' />
+            <i
+              className='fa fa-whatsapp mr-2'
+              style={{ color: 'whitesmoke', fontSize: 24 }}
+            />
             <i>whatsapp</i>
           </div>
           {/* <div className='d-flex justify-content-center'>

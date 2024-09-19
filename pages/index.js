@@ -32,15 +32,15 @@ const Home = () => {
         <HomePage/>
         {/* <AboutContent /> */}
         {/* <ServiceContent />  */}
-        /** */
+        
         {/* <PV_Controller /> */}
-        /** */
+       
         {/* <Funfact /> */}
         {/* <WorkProcess /> */}
         {/* <ChooseUs />  */}
         {/* <ProductsList /> */}
         {/* <PricingList />  */}
-        <GalleryContent />
+        {/* <GalleryContent /> */}
         {/* <Team />  */}
         {/* <Testimonial /> */}
         {/* <BlogList />  */}

@@ -127,7 +127,7 @@ const MobileMenu = () => {
                       Energy Monitoring System
                     </Link>
                   </li>
-                  <hr/>
+                  <hr />
                   <li>
                     <Link
                       href={{
@@ -137,7 +137,7 @@ const MobileMenu = () => {
                       SCADA System
                     </Link>
                   </li>
-                  <hr/>
+                  <hr />
                   <li>
                     <Link
                       href={{
@@ -222,13 +222,24 @@ const MobileMenu = () => {
           <div className='header_top_left'>
             <ul className='header_socil list-inline'>
               <li>
-                <a href='#/' className='fa fa-facebook'></a>
+                <a
+                  href='https://www.facebook.com/people/Automatrix-Engineering/61561500455442/'
+                  className='fa fa-facebook'
+                ></a>
               </li>
               <li>{/* <a href='#/' className='fa fa-twitter'></a> */}</li>
               <li>
-                <a href='#/' className='fa fa-linkedin'></a>
+                <a
+                  href='https://www.linkedin.com/company/automatrix-engineering/?viewAsMember=true'
+                  className='fa fa-linkedin'
+                ></a>
               </li>
-              <li>{/* <a href='#/' className='fa fa-google-plus'></a> */}</li>
+              <li>
+                <a
+                  href='https://wa.me/923001051050'
+                  className='fa fa-whatsapp'
+                ></a>
+              </li>
             </ul>
           </div>
         </div>

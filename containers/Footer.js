@@ -118,9 +118,7 @@ const Footer = () => {
                 <div className='widget quick_lnk'>
                   <ul>
                     <li>
-                      <Link href='#'>
-                        Maintenance / Tips / FAQ's
-                      </Link>
+                      <Link href='#'>Maintenance / Tips / FAQ's</Link>
                     </li>
                     <li>
                       <Link href='#t'>About Us</Link>
@@ -150,7 +148,10 @@ const Footer = () => {
           </div>
         </div>
         {/*  Start:Subfooter  */}
-        <div className='subfooter'>
+        <div
+          className='subfooter'
+          style={{ color: 'whitesmoke', fontSize: 18 }}
+        >
           <div className=' justify-content-center h5 row'>
             <a
               href={`tel:${CONTACT.phone}`}
@@ -167,6 +168,14 @@ const Footer = () => {
               <i className='fa fa-envelope mr-2' />
               <i>{CONTACT.email}</i>
             </a>
+          </div>
+          <div>
+            <a
+              href={`https://wa.me/923111646640`}
+              className='fa fa-whatsapp'
+            ></a>
+            <i className='fa fa-whatsapp mr-2' />
+            <i>whatsapp</i>
           </div>
           {/* <div className='d-flex justify-content-center'>
             <div className='h5'>Supreme Windows London </div>

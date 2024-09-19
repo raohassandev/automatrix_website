@@ -13,7 +13,7 @@ const Menu = () => {
   };
   const logo = 'assets/images/Automatrix_Logo_2.jpeg';
   return (
-    <div className='menu_area'>
+    <div className='menu_area bottom-border'>
       <div className='navigation'>
         <div className='container'>
           <div className='logo '>
@@ -102,9 +102,9 @@ const Menu = () => {
                   <li>
                     <Link href='/about'>About Us</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href='/TestPage'>dev</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </Nav>
             </Navbar>
@@ -118,6 +118,7 @@ const Menu = () => {
         </div>
         {/* container */}
       </div>
+
       {/* End: header navigation */}
     </div>
   );

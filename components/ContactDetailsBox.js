@@ -1,4 +1,4 @@
-import { CONTACT } from "../helpers/products";
+import { CONTACT } from '../helpers/products';
 
 export const ContactDetailsBox = (
   <div className='col-md-12 col-sm-12 col-lg-4'>
@@ -25,7 +25,13 @@ export const ContactDetailsBox = (
           <p style={{ marginTop: '-40px', paddingLeft: '10px' }}>
             <span>Email Address :</span>
           </p>
-          <p style={{ paddingLeft: '10px', paddingRight: '-50px', overflow: 'wrap' }}>
+          <p
+            style={{
+              paddingLeft: '10px',
+              paddingRight: '-50px',
+              overflow: 'wrap',
+            }}
+          >
             <span>{CONTACT.email}</span>
           </p>
         </a>
@@ -35,6 +41,17 @@ export const ContactDetailsBox = (
           <i className='icon-glyph-33'></i>
           <p style={{ marginTop: '-40px', paddingLeft: '10px' }}>
             <span>Contact Us :</span>
+          </p>
+          <p style={{ paddingLeft: '10px' }}>
+            <span>{CONTACT.phone}</span>
+          </p>
+        </a>
+      </div>
+      <div className='single_con_add'>
+        <a href={`https://wa.me/923111646640`}>
+          <i className='fa fa-whatsapp'></i>
+          <p style={{ marginTop: '-50px', paddingLeft: '10px' }}>
+            <span>Whatsapp :</span>
           </p>
           <p style={{ paddingLeft: '10px' }}>
             <span>{CONTACT.phone}</span>

@@ -197,9 +197,6 @@ export const Home = () => {
                   </div>
                 </div>
 
-                {/* <div className='col-md-4 col-sm-12'>
-                  <ServiceSidebar />
-                </div> */}
               </div>
             </div>
           </div>

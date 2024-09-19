@@ -25,7 +25,7 @@ const Header = () => {
               </a>
               {CONTACT.phone}
             </li>
-            <li style={{color: 'white'}}>
+            <li style={{ color: 'white' }}>
               <a href={`mailto:${CONTACT.email}`}>
                 <i className='fa fa-envelope'></i>
               </a>{' '}
@@ -65,6 +65,15 @@ const Header = () => {
                 rel='noopener noreferrer'
               >
                 <i className='fa fa-linkedin'></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://wa.me/923111646640'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <i class='fa fa-whatsapp'></i>
               </a>
             </li>
             {/* <li>

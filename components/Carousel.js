@@ -5,7 +5,7 @@ export default function Carousel() {
   const images = Object.keys(amxImages).map(
     (key) => `/assets/images/amx/${amxImages[key]}`
   );
-  // console.log(images)
+  // console.log(images);
 
   return (
     <div

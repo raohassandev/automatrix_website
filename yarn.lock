@@ -2508,6 +2508,11 @@ react-external-link@^1.2.1:
   resolved "https://registry.yarnpkg.com/react-external-link/-/react-external-link-1.3.0.tgz#1b7d7dd2ca65332c250d8c020fe3a283aff10077"
   integrity sha512-gSNaxQBO9nvKS3BHpVVP9Pe/ED438EzHXb9Mf9QPvHU4fBC7TrxoBkDhewUmG9pmMwRDd2kbEwLu3snqVdoapA==
 
+react-floating-whatsapp@^5.0.8:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/react-floating-whatsapp/-/react-floating-whatsapp-5.0.8.tgz#6bdda35ef29b18bbd130d60d387be8bac7a92781"
+  integrity sha512-4X485d04u7MoWpn61OpWPO/mL94P3gaFq1L932ztH7bo9eClAFcg5ufIxNKbJo9/1h0xpjWZKEW0KBB0apWzZw==
+
 react-id-swiper@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-id-swiper/-/react-id-swiper-4.0.0.tgz#eed938c5a4bf464a5cd7316a1bf6778581f47f2f"

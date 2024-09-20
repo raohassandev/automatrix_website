@@ -331,7 +331,7 @@ section {
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  /*background: #FF5001;*/
+  /* background: #FF5001; */
   background: #FF5001;
   border-radius: 2px;
 }

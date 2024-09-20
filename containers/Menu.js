@@ -25,8 +25,8 @@ const Menu = () => {
           <div className='meun_wrp mt-1'>
             <Navbar expand='lg' sticky='top' id='navigation'>
               <Nav className='mr-auto'>
-                <ul>
-                  <li className='active'>
+                <ul style={{ fontSize: 45 }}>
+                  <li className='active' style={{ fontSize: 45 }}>
                     <Link href='/'>Home </Link>
                   </li>
                   <li className='has-sub'>

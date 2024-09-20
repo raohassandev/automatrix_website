@@ -4,6 +4,7 @@ import Footer from "../containers/Footer";
 import Head from 'next/head';
 import Header from "../containers/Header";
 import Menu from "../containers/Menu";
+import Whatsapp from "../components/Whatsapp";
 
 const LayoutOne = (props ) => {
   return (
@@ -20,6 +21,7 @@ const LayoutOne = (props ) => {
         <Header />
         <Menu />
           {props.children}
+          <Whatsapp/>
         <Footer />
       </div> 
 

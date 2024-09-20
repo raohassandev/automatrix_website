@@ -208,6 +208,15 @@ const MobileMenu = () => {
                 </a>
               </li>
               <li>
+                <a
+                  href='https://wa.me/923111646640'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <i class='fa fa-whatsapp'>{'  ' + CONTACT.phone}</i>
+                </a>
+              </li>
+              <li>
                 <a className='fa ' href={`mailto:${CONTACT.email}`}>
                   <i className='fa fa-envelope'> {'  ' + CONTACT.email}</i>
                 </a>

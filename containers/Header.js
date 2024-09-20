@@ -21,7 +21,7 @@ const Header = () => {
           <ul className='header_socil list-inline pull-left'>
             <li>
               <a href={`tel:${CONTACT.phone}`}>
-                <i className='fa fa-phone'> </i>
+                <i className='fa fa-phone mr-1' style={{fontSize: '25px'}} > </i>
               </a>
               {CONTACT.phone}
             </li>

@@ -230,6 +230,7 @@ export const PRODUCTS = {
 export const CONTACT = {
   name: 'Supreme Windows London',
   phone: '0311 1646640',
+  whatsapp: '92311 1646640',
   email: 'info@automatrix.pk',
   address: '97-C, Civic Center, Sarwar Plaza, Sabzazar Lahore',
   location: { latitude: '31.517932', longitude: '74.267735' },
